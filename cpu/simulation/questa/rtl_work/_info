@@ -1,0 +1,749 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1783327203
+VVi3^eWVUdahaA]h85io;d3
+04 2 10 work t0 behavioral 1
+=1-1068386eecfb-6a4b69e1-287-1364
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U16 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+Ealu
+Z2 w1779725123
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/cpu.vhd
+Z7 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/cpu.vhd
+l0
+L139 1
+VaH419z`lanL8V@z;I`m^Q3
+!s100 83mANZ7ic@Smf;iYhUcQP2
+Z8 OL;C;2025.2;82
+33
+Z9 !s110 1783327199
+!i10b 1
+Z10 !s108 1783327199.000000
+Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/cpu.vhd|
+Z12 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/cpu.vhd|
+!i113 0
+Z13 o-2008 -work work
+Z14 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Afuncalu
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 aH419z`lanL8V@z;I`m^Q3
+!i122 0
+l155
+L150 51
+VlallM7Ue:mgbfn3QQ9j563
+!s100 d:OYKFeLV:MeDj?1P]_G>3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ebrancher
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L313 1
+V]1a@CYNZn]dFdYHgL0gZH1
+!s100 ;L3jcRfHAW>kW^PGG7b4;0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncbr
+R3
+R4
+R5
+DEx4 work 8 brancher 0 22 ]1a@CYNZn]dFdYHgL0gZH1
+!i122 0
+l331
+L327 22
+VAdazMd^8GPkCR;l_>C>`43
+!s100 L;WnS5kh3cK5bJWGX:OVY1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Econtrolunit
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L210 1
+VjgDW=MBgRi_o;0]LT9lfI2
+!s100 L9e]^AZQjL^2NY_07P0ZP0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afunccu
+R3
+R4
+R5
+DEx4 work 11 controlunit 0 22 jgDW=MBgRi_o;0]LT9lfI2
+!i122 0
+l232
+L228 77
+Vho2TVXdLJfDP_DGFL3`7c3
+!s100 ;@oD:`bPz_7GT:[[3QcSZ0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ecpu
+R2
+Z15 DPx4 work 8 memtypes 0 22 G`=e4:iOYnlZAg0Ga>kC82
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L1070 1
+VEHSh@zEN_nV_[=Z@LoRHf0
+!s100 lJhf`T@OGiKn?miZY@CX:3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afunccpu
+R15
+R3
+R4
+R5
+DEx4 work 3 cpu 0 22 EHSh@zEN_nV_[=Z@LoRHf0
+!i122 0
+l1402
+L1086 531
+VY02ii8`Q=6?4jgVm[Z2Pj1
+!s100 A6k?QNNB1AASzZTmKgUof2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edatamemory
+R2
+R15
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L359 1
+Vb0VFl>VXcZ[aDV8BTIzN62
+!s100 BnLA8>Ve^Q5_X:d>cnh_S0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncdm
+R15
+R3
+R4
+R5
+DEx4 work 10 datamemory 0 22 b0VFl>VXcZ[aDV8BTIzN62
+!i122 0
+l377
+L372 47
+VTeS@TK@bz?@D;O2M`8QLb2
+!s100 SG]6RZcMkzoU125n2]m9I2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ederegister
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L705 1
+VeI?H8jaZD6J^3z3ZY5[;E1
+!s100 EMTQaJLZT<f@jf8cDOY>Q1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ader
+R3
+R4
+R5
+DEx4 work 10 deregister 0 22 eI?H8jaZD6J^3z3ZY5[;E1
+!i122 0
+l772
+L752 86
+VM4G9nWZOjK=0[oXDmgcGM1
+!s100 QCLAW`]7RE=dNiS?kUY6D1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eemregister
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L847 1
+V^jzD3iaH6FeNYHoJ_6:>62
+!s100 jYBbj[lfzRlV=h^X>cjG72
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Aemr
+R3
+R4
+R5
+DEx4 work 10 emregister 0 22 ^jzD3iaH6FeNYHoJ_6:>62
+!i122 0
+l883
+L872 48
+V40cMh<cf9c7m^f]BzkKgM0
+!s100 2RUjb]hgiQoEnhPmDMER?3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Efdregister
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L656 1
+V3Ql2^g4;h8lI=RDQH;VN:2
+!s100 :OMaaOlgil;;E45OFI?z@2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afdr
+R3
+R4
+R5
+DEx4 work 10 fdregister 0 22 3Ql2^g4;h8lI=RDQH;VN:2
+!i122 0
+l674
+L670 26
+VPZcOk_aNjY_n9LN]f4N8j2
+!s100 LldGh]oYLFKBdJK0Uzo^E3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ehazardunit
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L998 1
+V2:583;5dhPG]jPSO_Tm[F3
+!s100 hj5O`_DDcL6_=<N_l8BhV2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ahu
+R3
+R4
+R5
+DEx4 work 10 hazardunit 0 22 2:583;5dhPG]jPSO_Tm[F3
+!i122 0
+l1024
+L1021 40
+VB56a?0MlnFOozCYR[VlO`2
+!s100 C;1WA0_33[Eh4@1?kjFXN1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eimmext
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L467 1
+V@HZCY@kWB37dgJJT@R7503
+!s100 c8;7?[XEBJQV>_>=MB9RU3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncie
+R3
+R4
+R5
+DEx4 work 6 immext 0 22 @HZCY@kWB37dgJJT@R7503
+!i122 0
+l477
+L475 41
+V4SB;YlVIA>[e6?P;ld9ZB2
+!s100 4>W7eh`F8T>8;@m9^iQ7=1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Einstructionmemory
+R2
+R15
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L429 1
+V<ZC8b1hOJSU?]f`kEYLVg0
+!s100 ;`cN8TFClE=6;PE8aT<dL3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncim
+R15
+R3
+R4
+R5
+DEx4 work 17 instructionmemory 0 22 <ZC8b1hOJSU?]f`kEYLVg0
+!i122 0
+l441
+L437 20
+VIeI@n>R:oMVl@?BkNZ3G81
+!s100 ]m`i=B7jZdOU2=L5>ngCb2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Pmemtypes
+R4
+R5
+!i122 0
+R2
+R1
+R6
+R7
+l0
+L5 126
+VG`=e4:iOYnlZAg0Ga>kC82
+!s100 Ln1RUL[L6bzN7Q>WD;mg_0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emwregister
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L928 1
+V3>Y=5L^KgGfD:?e0F0PII1
+!s100 1QzcU:XiTDcP1e4@d42XQ2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Amwr
+R3
+R4
+R5
+DEx4 work 10 mwregister 0 22 3>Y=5L^KgGfD:?e0F0PII1
+!i122 0
+l958
+L949 40
+VI@PVGMUZ:<df=VB^^0<JC1
+!s100 ch<`W=GMDG3BJ7]h@>:z=0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Epcreg
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L620 1
+Vn0_:SbDCgW20Ze>CBUAWK1
+!s100 ZdjS25fThNfhFbCJmi];b3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncpc
+R3
+R4
+R5
+DEx4 work 5 pcreg 0 22 n0_:SbDCgW20Ze>CBUAWK1
+!i122 0
+l632
+L630 18
+VD5mEIA`6Yc@KZjKlU7fhH1
+!s100 672?I4o6MDTnei1USR:Ze3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Erdext
+R2
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L526 1
+V?UYDEc6W_YzeX=6hzM39<0
+!s100 K:BBz6@_5G7d3=PMU5VzW3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncrd
+R3
+R4
+R5
+DEx4 work 5 rdext 0 22 ?UYDEc6W_YzeX=6hzM39<0
+!i122 0
+l535
+L534 26
+V5O:S=2DifFI8;kRGMk5UL2
+!s100 `;mci^`iI@<QJe8kCDiMz2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eregisterfile
+R2
+R15
+R3
+R4
+R5
+!i122 0
+R1
+R6
+R7
+l0
+L570 1
+V:J>5@5XJdja1nR0Hg]V`A2
+!s100 6ge97?]O7[KXfA?_[;J`c0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Afuncrf
+R15
+R3
+R4
+R5
+DEx4 work 12 registerfile 0 22 :J>5@5XJdja1nR0Hg]V`A2
+!i122 0
+l588
+L584 26
+VAgY05]JD:m>nlc;TUk2hC2
+!s100 Yn>ARnm]cSbkR[[[l9X:k0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Et0
+Z16 w1778316734
+R15
+R3
+R4
+R5
+!i122 1
+R1
+Z17 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/t0.vhd
+Z18 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/t0.vhd
+l0
+L6 1
+V<iEOICHAdziG>Ab0IN67V3
+!s100 bcogzKJ3TfhQ7=4<@]9a81
+R8
+33
+Z19 !s110 1783327200
+!i10b 1
+Z20 !s108 1783327200.000000
+Z21 !s90 -reportprogress|300|-2008|-work|work|C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/t0.vhd|
+Z22 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/cpu/t0.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R15
+R3
+R4
+R5
+DEx4 work 2 t0 0 22 <iEOICHAdziG>Ab0IN67V3
+!i122 1
+l37
+L9 76
+VEjgB<ol<`4Q88?NUlUjo^0
+!s100 jNGFI288oiTaIoi2WgA;e0
+R8
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R13
+R14

@@ -1,0 +1,137 @@
+m255
+K4
+z2
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+Eniosv
+Z1 w1782980253
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 8
+R0
+Z5 8./../niosv.vhd
+Z6 F./../niosv.vhd
+l0
+L9 1
+V:6`8<VFeFLkdlO6c[7HF=0
+!s100 42Gf`Z;G9YOfbC4oj_Bmo3
+Z7 OL;C;2025.2;82
+32
+Z8 !s110 1782981175
+!i10b 1
+Z9 !s108 1782981175.000000
+Z10 !s90 -reportprogress|300|./../niosv.vhd|
+Z11 !s107 ./../niosv.vhd|
+!i113 0
+Z12 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Artl
+R2
+R3
+R4
+Z13 DEx4 work 5 niosv 0 22 :6`8<VFeFLkdlO6c[7HF=0
+!i122 8
+l326
+L17 548
+Va?oMcWEm3Ik^>78EBn1Fn1
+!s100 O>E<JgFYj7Bo<>A6WX[fK0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Etb_top_ent
+Z14 w1782933746
+R3
+R4
+!i122 10
+R0
+Z15 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/tb_top_ent.vhd
+Z16 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/tb_top_ent.vhd
+l0
+L4 1
+VEj]A^KVkR7Mg40Sf^Cdo=0
+!s100 S2?hR[?nF0edAYi`<Ki_Z3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/tb_top_ent.vhd|
+Z18 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/tb_top_ent.vhd|
+!i113 0
+Z19 o-93 -work work
+R12
+Asim
+Z20 DEx4 work 7 top_ent 0 22 DH@4ho@L9YbiM@gkWdBfd0
+R3
+R4
+Z21 DEx4 work 10 tb_top_ent 0 22 Ej]A^KVkR7Mg40Sf^Cdo=0
+!i122 10
+l21
+Z22 L7 54
+Z23 V[4;KXX;8;2li0XD]CId3h0
+Z24 !s100 oJXaY;8Eionzj^G2XRdfj1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R19
+R12
+Etop_ent
+Z25 w1782935831
+R3
+R4
+!i122 9
+R0
+Z26 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/top_ent_sim.vhd
+Z27 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/top_ent_sim.vhd
+l0
+L4 1
+VDH@4ho@L9YbiM@gkWdBfd0
+!s100 @WgBPg3<TC13=[l2@A6kG3
+R7
+31
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/top_ent_sim.vhd|
+Z29 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/top_ent_sim.vhd|
+!i113 0
+R19
+R12
+Artl
+R2
+R13
+R3
+R4
+R20
+!i122 9
+l25
+L17 169
+VN:`:mVIN16j_3Tj8D;1<T2
+!s100 0_6;BEbQED_f2NROW]1T50
+R7
+31
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 0
+R19
+R12

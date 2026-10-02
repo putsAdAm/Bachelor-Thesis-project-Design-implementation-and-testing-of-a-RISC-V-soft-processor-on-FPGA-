@@ -1,0 +1,20 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst niosv.onchip_memory2_0 -pg 1 -lvl 2 -y 190
+preplace inst niosv.pio_0 -pg 1 -lvl 2 -y 270
+preplace inst niosv.intel_niosv_m_0.hart -pg 1
+preplace inst niosv.intel_niosv_m_0.dbg_mod -pg 1
+preplace inst niosv.clk_0 -pg 1 -lvl 1 -y 310
+preplace inst niosv -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst niosv.intel_niosv_m_0.timer_module -pg 1
+preplace inst niosv.intel_niosv_m_0.clock_bridge -pg 1
+preplace inst niosv.intel_niosv_m_0.reset_bridge -pg 1
+preplace inst niosv.intel_niosv_m_0 -pg 1 -lvl 2 -y 70
+preplace netloc FAN_OUT<net_container>niosv</net_container>(SLAVE)onchip_memory2_0.clk1,(SLAVE)intel_niosv_m_0.clk,(MASTER)clk_0.clk,(SLAVE)pio_0.clk) 1 1 1 380
+preplace netloc EXPORT<net_container>niosv</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)niosv.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>niosv</net_container>(SLAVE)niosv.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>niosv</net_container>(SLAVE)onchip_memory2_0.reset1,(MASTER)clk_0.clk_reset,(SLAVE)intel_niosv_m_0.reset,(SLAVE)pio_0.reset) 1 1 1 400
+preplace netloc INTERCONNECT<net_container>niosv</net_container>(MASTER)intel_niosv_m_0.instruction_manager,(MASTER)intel_niosv_m_0.data_manager,(SLAVE)onchip_memory2_0.s1,(SLAVE)intel_niosv_m_0.timer_sw_agent,(SLAVE)pio_0.s1,(SLAVE)intel_niosv_m_0.dm_agent) 1 1 2 420 30 730
+preplace netloc EXPORT<net_container>niosv</net_container>(SLAVE)niosv.pio_0_external_connection,(SLAVE)pio_0.external_connection) 1 0 2 NJ 300 NJ
+levelinfo -pg 1 0 170 770
+levelinfo -hier niosv 180 210 530 750

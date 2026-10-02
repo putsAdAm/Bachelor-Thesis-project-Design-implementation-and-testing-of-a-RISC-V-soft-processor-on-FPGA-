@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Jul  8 09:26:02 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : niosv
+Top-level Entity Name : top_ent
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 3456
+Total pins : 44
+Total virtual pins : 0
+Total block memory bits : 530,560
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

@@ -1,0 +1,1 @@
+c:/altera_lite/25.1std/questa_fse/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 31605168 work.codificatorehamming_vhd_vec_tst -quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc -allow_unnamed -o _opt -id 1-1068386eecfb-69c7e61f-91-2d00 +__betafsm

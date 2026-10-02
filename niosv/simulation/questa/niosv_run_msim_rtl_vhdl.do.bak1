@@ -1,0 +1,47 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlib niosv
+vmap niosv niosv
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v}
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v}
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v}
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v}
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv}
+vlog  -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv}
+vlog -sv -work niosv +incdir+C:/Users/adria/OneDrive/Desktop/progetti\ Quartus/niosv/niosv/synthesis/submodules {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv}
+vcom -93 -work niosv {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/niosv.vhd}
+vcom -93 -work work {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/top_ent.vhd}
+
+vcom -93 -work work {C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/tb_top.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -L niosv -voptargs="+acc"  tb_top
+
+add wave *
+view structure
+view signals
+run 3000 ns

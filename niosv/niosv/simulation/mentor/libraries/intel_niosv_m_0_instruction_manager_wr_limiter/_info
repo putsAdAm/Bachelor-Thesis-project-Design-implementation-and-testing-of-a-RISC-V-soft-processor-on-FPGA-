@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+valtera_avalon_sc_fifo
+2./../submodules/altera_avalon_sc_fifo.v
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1782981154
+!i10b 1
+!s100 @<enCm^HCbAEh:dIl70AK3
+Id2Hhg2?6FK=5YT2QDYU`K0
+S1
+R0
+Z3 w1782980260
+8./../submodules/altera_avalon_sc_fifo.v
+F./../submodules/altera_avalon_sc_fifo.v
+!i122 22
+L0 21 895
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z6 !s108 1782981154.000000
+!s107 ./../submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-sv|./../submodules/altera_avalon_sc_fifo.v|-work|intel_niosv_m_0_instruction_manager_wr_limiter|
+!i113 0
+Z7 o-sv -work intel_niosv_m_0_instruction_manager_wr_limiter -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0 defaultOptions 1085333592
+valtera_avalon_st_pipeline_base
+2./../submodules/altera_avalon_st_pipeline_base.v
+R1
+R2
+!i10b 1
+!s100 B`Yjz6P[R<;Yl[CKNl]`<2
+IH_0KBK5AmY:geAS;Vi3W30
+S1
+R0
+R3
+8./../submodules/altera_avalon_st_pipeline_base.v
+F./../submodules/altera_avalon_st_pipeline_base.v
+!i122 23
+L0 22 118
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../submodules/altera_avalon_st_pipeline_base.v|
+!s90 -reportprogress|300|-sv|./../submodules/altera_avalon_st_pipeline_base.v|-work|intel_niosv_m_0_instruction_manager_wr_limiter|
+!i113 0
+R7
+R8
+valtera_merlin_reorder_memory
+Z9 2./../submodules/altera_merlin_reorder_memory.sv
+R1
+Z10 !s110 1782981153
+!i10b 1
+!s100 Fg7H2g8<53DhBfbZ][=k>2
+IF7zADTJ_5]@Ko82m;boSM0
+S1
+R0
+R3
+Z11 8./../submodules/altera_merlin_reorder_memory.sv
+Z12 F./../submodules/altera_merlin_reorder_memory.sv
+!i122 21
+L0 28 155
+R4
+R5
+r1
+!s85 0
+31
+Z13 !s108 1782981153.000000
+Z14 !s107 ./../submodules/altera_merlin_reorder_memory.sv|
+Z15 !s90 -reportprogress|300|-sv|./../submodules/altera_merlin_reorder_memory.sv|-work|intel_niosv_m_0_instruction_manager_wr_limiter|
+!i113 0
+R7
+R8
+valtera_merlin_traffic_limiter
+2./../submodules/altera_merlin_traffic_limiter.sv
+R1
+R10
+!i10b 1
+!s100 OR49VbMDTNI[MDi8?H5e20
+IA^S8D[QSRb@U757j;nTb02
+S1
+R0
+R3
+8./../submodules/altera_merlin_traffic_limiter.sv
+F./../submodules/altera_merlin_traffic_limiter.sv
+!i122 20
+L0 49 737
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 ./../submodules/altera_merlin_traffic_limiter.sv|
+!s90 -reportprogress|300|-sv|./../submodules/altera_merlin_traffic_limiter.sv|-work|intel_niosv_m_0_instruction_manager_wr_limiter|
+!i113 0
+R7
+R8
+vmemory_pointer_controller
+R9
+R1
+R10
+!i10b 1
+!s100 Jn57m6_oRI3hA`8PYgIa63
+IcB3<Zgl<HgD:F<fLl7KF`0
+S1
+R0
+R3
+R11
+R12
+!i122 21
+L0 185 112
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R7
+R8

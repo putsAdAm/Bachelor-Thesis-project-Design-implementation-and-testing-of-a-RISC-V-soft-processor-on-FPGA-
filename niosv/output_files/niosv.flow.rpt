@@ -1,0 +1,313 @@
+Flow report for niosv
+Wed Jul  8 09:27:27 2026
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Jul  8 09:27:27 2026           ;
+; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                   ; niosv                                           ;
+; Top-level Entity Name           ; top_ent                                         ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 2,464 / 32,070 ( 8 % )                          ;
+; Total registers                 ; 3643                                            ;
+; Total pins                      ; 44 / 457 ( 10 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 530,560 / 4,065,280 ( 13 % )                    ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/08/2026 09:25:27 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; niosv               ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                  ;
++--------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                                                                    ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; ADVANCED_PHYSICAL_OPTIMIZATION       ; Off                                                                                      ; On            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 18039809436922.178349552614156                                                           ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                       ; --            ; --          ; tb_top_ent                        ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                                      ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                                      ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                                      ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                                      ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_top_ent                                                                               ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                                                     ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; Questa Altera FPGA (VHDL)                                                                ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                                                                                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; tb_top_ent.vhd                                                                           ; --            ; --          ; tb_top_ent                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_top_ent                                                                               ; --            ; --          ; tb_top_ent                        ;
+; EDA_TEST_BENCH_NAME                  ; tb_top_ent                                                                               ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 2000 ns                                                                                  ; --            ; --          ; tb_top_ent                        ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                                     ; --            ; --          ; eda_simulation                    ;
+; ENABLE_SIGNALTAP                     ; On                                                                                       ; --            ; --          ; --                                ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                                                                       ; Off           ; --          ; --                                ;
+; HYBRID_FLOW_NEW_EXTRACTOR            ; On                                                                                       ; Off           ; --          ; --                                ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                       ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/../../niosv.qsys                                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/niosv.vhd                                                               ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_reset_controller.v                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_reset_synchronizer.v                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_reset_controller.sdc                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_irq_mapper.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0.v                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_avalon_st_adapter.vhd                ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_arbitrator.sv                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux.sv                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_demux_001.sv                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_cmd_mux_001.sv                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_cmd_mux.sv                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_cmd_demux.sv                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_traffic_limiter.sv                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_reorder_memory.sv                              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_sc_fifo.v                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_st_pipeline_base.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_router_005.sv                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_router_004.sv                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_router_002.sv                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_mm_interconnect_0_router.sv                            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_slave_agent.sv                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_axi_master_ni.sv                               ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_address_alignment.sv                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_merlin_slave_translator.sv                            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_pio_0.vhd                                              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_onchip_memory2_0.vhd                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_intel_niosv_m_0.v                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_intel_niosv_m_0_irq_mapper.sv                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/csr_mlab.mif                                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/debug_rom.mif                                                ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_dm_def.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_ram.sv                                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_dm_jtag2mm.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_dm_top.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_debug_module.sv                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_debug_rom.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_dm_def.sv                                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_ram.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_dm_jtag2mm.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_dm_top.sv                                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_debug_module.sv                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_debug_rom.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_std_synchronizer_bundle.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_std_synchronizer_nocut.v                              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_std_synchronizer.v                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_st_clock_crosser.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_st_pipeline_stage.sv                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/altera_avalon_st_handshake_clock_crosser.sdc                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_timer_msip.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_timer_msip.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/riscv.pkg.sv                                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_opcode_def.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_clic_pkg.sv                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_mem_op_state.sv                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/ecc_enc.sv                                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/ecc_dec.sv                                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/altecc_enc.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/altecc_dec.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_reg_file.sv                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_csr.sv                                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_csrind_if.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_csrind_host.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_interrupt_handler.sv                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_instr_buffer.sv                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_bus_req.sv                                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_shift.sv                                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_alu.sv                                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_lsu.sv                                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_decoder.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_core.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_csr.sv                                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_D_stage.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_E_stage.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_c_M0_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_decoder.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_core.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_instr_prefetch.sv                              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_D_stage.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_E_stage.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_M0_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_m_W_stage.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/aldec/niosv_intel_niosv_m_0_hart.sv                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/riscv.pkg.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_opcode_def.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_clic_pkg.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_mem_op_state.sv                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/ecc_enc.sv                                            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/ecc_dec.sv                                            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/altecc_enc.sv                                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/altecc_dec.sv                                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_reg_file.sv                                     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_csr.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_csrind_if.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_csrind_host.sv                                  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_interrupt_handler.sv                            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_instr_buffer.sv                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_bus_req.sv                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_shift.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_alu.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_lsu.sv                                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_decoder.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_core.sv                                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_csr.sv                                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_D_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_E_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_c_M0_stage.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_decoder.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_core.sv                                       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_instr_prefetch.sv                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_D_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_E_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_M0_stage.sv                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_m_W_stage.sv                                    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/simulation/submodules/niosv_reset_controller.vhd                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/synthesis/../niosv.cmp                                                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; niosv/synthesis/../../niosv.qsys                                                         ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                   ; --            ; top_ent     ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                   ; --            ; top_ent     ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                                   ; --            ; top_ent     ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                      ; --            ; --          ; --                                ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                                                                   ; 12.5%         ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                    ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                             ; --            ; --          ; --                                ;
+; SLD_FILE                             ; niosv/synthesis/niosv.regmap                                                             ; --            ; --          ; --                                ;
+; SLD_FILE                             ; niosv/synthesis/niosv.debuginfo                                                          ; --            ; --          ; --                                ;
+; SLD_FILE                             ; db/stp1_auto_stripped.stp                                                                ; --            ; --          ; --                                ;
+; SLD_INFO                             ; QSYS_NAME niosv HAS_SOPCINFO 1 GENERATION_ID 1782980263                                  ; --            ; --          ; --                                ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                      ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                            ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                  ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=33                                                                         ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=33                                                                      ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=33                                                            ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                                                  ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                   ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000                                                 ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=21                                                             ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                            ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                                                     ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                               ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                           ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                        ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                   ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                             ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                      ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                                                     ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                 ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                   ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                                       ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                   ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                             ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=1                                                            ; --            ; --          ; auto_signaltap_0                  ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_niosv_auto_signaltap_0_1_c121,                  ; --            ; --          ; auto_signaltap_0                  ;
+; SOPCINFO_FILE                        ; niosv/synthesis/../../niosv.sopcinfo                                                     ; --            ; --          ; --                                ;
+; SPD_FILE                             ; niosv/simulation/../niosv.spd                                                            ; --            ; --          ; --                                ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                                       ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; top_ent                                                                                  ; niosv         ; --          ; --                                ;
+; USE_SIGNALTAP_FILE                   ; output_files/stp1.stp                                                                    ; --            ; --          ; --                                ;
++--------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 5232 MB             ; 00:00:45                           ;
+; Fitter               ; 00:00:50     ; 1.6                     ; 7479 MB             ; 00:02:01                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 5293 MB             ; 00:00:06                           ;
+; Power Analyzer       ; 00:00:07     ; 2.2                     ; 5692 MB             ; 00:00:15                           ;
+; Timing Analyzer      ; 00:00:13     ; 2.8                     ; 5651 MB             ; 00:00:34                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4827 MB             ; 00:00:02                           ;
+; Total                ; 00:01:51     ; --                      ; --                  ; 00:03:43                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
+; Power Analyzer       ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; TrediciNove      ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off niosv -c niosv
+quartus_fit --read_settings_files=off --write_settings_files=off niosv -c niosv
+quartus_asm --read_settings_files=off --write_settings_files=off niosv -c niosv
+quartus_pow --read_settings_files=off --write_settings_files=off niosv -c niosv
+quartus_sta niosv -c niosv
+quartus_eda --read_settings_files=off --write_settings_files=off niosv -c niosv
+
+
+

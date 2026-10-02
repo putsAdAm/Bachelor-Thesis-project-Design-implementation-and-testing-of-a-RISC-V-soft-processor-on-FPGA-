@@ -1,0 +1,150 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading niosv/niosv.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 25.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 25.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio_0 [altera_avalon_pio 25.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: niosv: Generating "niosv" for SIM_VHDL
+Info: intel_niosv_m_0: "niosv" instantiated intel_niosv_m "intel_niosv_m_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'niosv_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/25.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/25.1std/quartus/bin64/perl/lib -I C:/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/25.1std/quartus/sopc_builder/bin -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosv_onchip_memory2_0 --dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0002_onchip_memory2_0_gen/ --quartus_dir=C:/altera_lite/25.1std/quartus --vhdl --config=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0002_onchip_memory2_0_gen//niosv_onchip_memory2_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0002_onchip_memory2_0_gen/}]
+Info: onchip_memory2_0: Done RTL generation for module 'niosv_onchip_memory2_0'
+Info: onchip_memory2_0: "niosv" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pio_0: Starting RTL generation for module 'niosv_pio_0'
+Info: pio_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/25.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/25.1std/quartus/bin64/perl/lib -I C:/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/25.1std/quartus/sopc_builder/bin -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=niosv_pio_0 --dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0003_pio_0_gen/ --quartus_dir=C:/altera_lite/25.1std/quartus --vhdl --config=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0003_pio_0_gen//niosv_pio_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0003_pio_0_gen/}]
+Info: pio_0: Done RTL generation for module 'niosv_pio_0'
+Info: pio_0: "niosv" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "niosv" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosv" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosv" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "intel_niosv_m_0" instantiated intel_niosv_m_unit "hart"
+Info: timer_module: "intel_niosv_m_0" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "intel_niosv_m_0" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/aldec/niosv_ram.sv
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_ram.sv
+Info: irq_mapper: "intel_niosv_m_0" instantiated altera_irq_mapper "irq_mapper"
+Info: intel_niosv_m_0_dm_agent_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "intel_niosv_m_0_dm_agent_translator"
+Info: intel_niosv_m_0_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "intel_niosv_m_0_data_manager_agent"
+Info: intel_niosv_m_0_dm_agent_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "intel_niosv_m_0_dm_agent_agent"
+Info: intel_niosv_m_0_dm_agent_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "intel_niosv_m_0_dm_agent_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: intel_niosv_m_0_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "intel_niosv_m_0_instruction_manager_wr_limiter"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: niosv_reset_controller: "hart" instantiated intel_niosv_m_unit "niosv_reset_controller"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: niosv: Done "niosv" with 30 modules, 121 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv\niosv.spd --output-directory=C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv\niosv.spd --output-directory=C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv.qsys --synthesis=VHDL --output-directory=C:\Users\adria\OneDrive\Desktop\progettiQuartus\niosv\niosv\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading niosv/niosv.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 25.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 25.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio_0 [altera_avalon_pio 25.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosv.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: niosv: Generating "niosv" for QUARTUS_SYNTH
+Info: intel_niosv_m_0: "niosv" instantiated intel_niosv_m "intel_niosv_m_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'niosv_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/25.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/25.1std/quartus/bin64/perl/lib -I C:/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/25.1std/quartus/sopc_builder/bin -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosv_onchip_memory2_0 --dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0028_onchip_memory2_0_gen/ --quartus_dir=C:/altera_lite/25.1std/quartus --verilog --config=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0028_onchip_memory2_0_gen//niosv_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
+Info: onchip_memory2_0: Done RTL generation for module 'niosv_onchip_memory2_0'
+Info: onchip_memory2_0: "niosv" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pio_0: Starting RTL generation for module 'niosv_pio_0'
+Info: pio_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/25.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/25.1std/quartus/bin64/perl/lib -I C:/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/25.1std/quartus/sopc_builder/bin -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=niosv_pio_0 --dir=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0029_pio_0_gen/ --quartus_dir=C:/altera_lite/25.1std/quartus --verilog --config=C:/Users/adria/AppData/Local/Temp/alt0636_3510922471558530506.dir/0029_pio_0_gen//niosv_pio_0_component_configuration.pl --do_build_sim=0}]
+Info: pio_0: Done RTL generation for module 'niosv_pio_0'
+Info: pio_0: "niosv" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "niosv" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosv" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosv" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "intel_niosv_m_0" instantiated intel_niosv_m_unit "hart"
+Info: timer_module: "intel_niosv_m_0" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "intel_niosv_m_0" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/niosv_ram.sv
+Info: irq_mapper: "intel_niosv_m_0" instantiated altera_irq_mapper "irq_mapper"
+Info: intel_niosv_m_0_dm_agent_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "intel_niosv_m_0_dm_agent_translator"
+Info: intel_niosv_m_0_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "intel_niosv_m_0_data_manager_agent"
+Info: intel_niosv_m_0_dm_agent_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "intel_niosv_m_0_dm_agent_agent"
+Info: intel_niosv_m_0_dm_agent_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "intel_niosv_m_0_dm_agent_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: intel_niosv_m_0_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "intel_niosv_m_0_instruction_manager_wr_limiter"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: niosv_reset_controller: "hart" instantiated intel_niosv_m_unit "niosv_reset_controller"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: niosv: Done "niosv" with 30 modules, 82 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

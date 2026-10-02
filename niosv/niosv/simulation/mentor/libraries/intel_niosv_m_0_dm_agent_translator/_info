@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+valtera_merlin_slave_translator
+2./../submodules/altera_merlin_slave_translator.sv
+DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1782981158
+!i10b 1
+!s100 l31VlRegYee1a?4ON5z6A2
+IdPF5X>5NZDbGg_m>@GfYW1
+S1
+R0
+w1782980260
+8./../submodules/altera_merlin_slave_translator.sv
+F./../submodules/altera_merlin_slave_translator.sv
+!i122 5
+L0 35 448
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1782981158.000000
+!s107 ./../submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|./../submodules/altera_merlin_slave_translator.sv|-work|intel_niosv_m_0_dm_agent_translator|
+!i113 0
+o-sv -work intel_niosv_m_0_dm_agent_translator -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0 defaultOptions 1085333592

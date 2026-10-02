@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+valtera_merlin_burst_uncompressor
+2./../submodules/altera_merlin_burst_uncompressor.sv
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1782981156
+!i10b 1
+!s100 i1bZWNRMIH?]A3dHeHSfg2
+IH1=GbX9m3m9[Nz?X=JzYN0
+S1
+R0
+Z3 w1782980260
+8./../submodules/altera_merlin_burst_uncompressor.sv
+F./../submodules/altera_merlin_burst_uncompressor.sv
+!i122 11
+L0 40 256
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1782981156.000000
+!s107 ./../submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|./../submodules/altera_merlin_burst_uncompressor.sv|-work|intel_niosv_m_0_dm_agent_agent|
+!i113 0
+Z6 o-sv -work intel_niosv_m_0_dm_agent_agent -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0 defaultOptions 1085333592
+valtera_merlin_slave_agent
+2./../submodules/altera_merlin_slave_agent.sv
+R1
+R2
+!i10b 1
+!s100 `Jk3V=>3M_hG;9XA<JLiI3
+I@;O=VQoNHmA;I5TPl@0NC2
+S1
+R0
+R3
+8./../submodules/altera_merlin_slave_agent.sv
+F./../submodules/altera_merlin_slave_agent.sv
+!i122 10
+L0 34 588
+R4
+R5
+r1
+!s85 0
+31
+!s108 1782981155.000000
+!s107 ./../submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|./../submodules/altera_merlin_slave_agent.sv|-work|intel_niosv_m_0_dm_agent_agent|
+!i113 0
+R6
+R7

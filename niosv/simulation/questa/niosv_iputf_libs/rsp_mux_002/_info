@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/simulation/questa
+valtera_merlin_arb_adder
+Z1 2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+Z2 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z3 !s110 1782933993
+!i10b 1
+!s100 Cl8VSH5Y96M;_8kb9eOi[0
+I^iT`n3PVKM86<`ff_0;=h1
+S1
+R0
+Z4 w1782919078
+Z5 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+Z6 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv
+!i122 1
+L0 228 45
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z9 !s108 1782933993.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv|
+Z10 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv|-work|rsp_mux_002|
+!i113 0
+Z11 o-sv -work rsp_mux_002 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0 defaultOptions 1085333592
+valtera_merlin_arbitrator
+R1
+R2
+R3
+!i10b 1
+!s100 `YAD1b22kAEW8zWHi:;FN1
+ILkEzLbgfUdC@T9i]IP=jz2
+S1
+R0
+R4
+R5
+R6
+!i122 1
+L0 103 121
+R7
+R8
+r1
+!s85 0
+31
+R9
+Z13 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_arbitrator.sv|
+R10
+!i113 0
+R11
+R12
+vniosv_mm_interconnect_0_rsp_mux_002
+2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+R2
+R3
+!i10b 1
+!s100 V=[1:jcHd3[4dI3h8gj?81
+IZ5eXXCLdH<41M<^Ee35R73
+S1
+R0
+R4
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+!i122 0
+L0 51 293
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv|-work|rsp_mux_002|
+!i113 0
+R11
+R12

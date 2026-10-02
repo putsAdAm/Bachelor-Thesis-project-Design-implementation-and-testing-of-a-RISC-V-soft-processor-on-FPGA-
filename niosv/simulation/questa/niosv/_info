@@ -1,0 +1,875 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/simulation/questa
+valtera_avalon_sc_fifo
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v
+Z1 !s110 1782810307
+!i10b 1
+!s100 5BK1b[bhL0>Ei=h=H:bmS0
+ITF9I:IS4m1XzWzcQj<5`80
+R0
+Z2 w1782810152
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v
+!i122 212
+L0 21 895
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z5 !s108 1782810307.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 0
+Z6 o-work niosv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -work niosv {+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0 defaultOptions 1085333592
+valtera_merlin_arb_adder
+Z9 2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+Z10 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z11 !s110 1782810304
+!i10b 1
+!s100 Cl8VSH5Y96M;_8kb9eOi[0
+IPDK6>]]n_S8m6E]CYGOMF0
+S1
+R0
+R2
+Z12 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+Z13 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv
+!i122 204
+L0 228 45
+R3
+R4
+r1
+!s85 0
+31
+Z14 !s108 1782810304.000000
+Z15 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 0
+Z17 o-sv -work niosv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z18 !s92 -sv -work niosv {+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+valtera_merlin_arbitrator
+R9
+R10
+R11
+!i10b 1
+!s100 `YAD1b22kAEW8zWHi:;FN1
+If4bJFWmM9c?V2OTaCjCa>3
+S1
+R0
+R2
+R12
+R13
+!i122 204
+L0 103 121
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R8
+valtera_merlin_axi_master_ni
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv
+R10
+Z19 !s110 1782810308
+!i10b 1
+!s100 ndog8:gJfkFLd<KS<1G]m3
+IGE?K[44AXPHWlBhoRfKB]1
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv
+!i122 219
+L0 27 744
+R3
+R4
+r1
+!s85 0
+31
+Z20 !s108 1782810308.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_axi_master_ni.sv|
+!i113 0
+R17
+R18
+R8
+valtera_merlin_burst_uncompressor
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+R10
+R19
+!i10b 1
+!s100 i1bZWNRMIH?]A3dHeHSfg2
+ID?h;<OPTBe`E0A7gG`cOE3
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+!i122 218
+L0 40 256
+R3
+R4
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 0
+R17
+R18
+R8
+valtera_merlin_slave_agent
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv
+R10
+R19
+!i10b 1
+!s100 `Jk3V=>3M_hG;9XA<JLiI3
+IHhS:ize8`7f4Wg[2CPYg;2
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv
+!i122 217
+L0 34 588
+R3
+R4
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 0
+R17
+R18
+R8
+valtera_merlin_slave_translator
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv
+R10
+R19
+!i10b 1
+!s100 l31VlRegYee1a?4ON5z6A2
+I@]CRZh[l1BPlBJZR2mO5_0
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv
+!i122 220
+L0 35 448
+R3
+R4
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 0
+R17
+R18
+R8
+valtera_merlin_traffic_limiter
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv
+R10
+Z21 !s110 1782810306
+!i10b 1
+!s100 OR49VbMDTNI[MDi8?H5e20
+IP?0n^OVMI=gH:]MFEMdgA3
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv
+!i122 211
+L0 49 737
+R3
+R4
+r1
+!s85 0
+31
+Z22 !s108 1782810306.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/altera_merlin_traffic_limiter.sv|
+!i113 0
+R17
+R18
+R8
+Eniosv
+Z23 w1782810145
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z25 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z26 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 223
+R0
+Z27 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/niosv.vhd
+Z28 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/niosv.vhd
+l0
+L9 1
+V6_Ag=Sd;oIh>[j0Ulda062
+!s100 42Gf`Z;G9YOfbC4oj_Bmo3
+Z29 OL;C;2025.2;82
+31
+Z30 !s110 1782810309
+!i10b 1
+Z31 !s108 1782810309.000000
+Z32 !s90 -reportprogress|300|-93|-work|niosv|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/niosv.vhd|
+Z33 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/niosv.vhd|
+!i113 0
+Z34 o-93 -work niosv
+Z35 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Artl
+R24
+R25
+R26
+Z36 DEx4 work 5 niosv 0 22 6_Ag=Sd;oIh>[j0Ulda062
+!i122 223
+l326
+Z37 L17 548
+Z38 VSj;^oN]R2LHm0J1ndodAe1
+Z39 !s100 R]=7Vj=0OKMJJ>oi3G^KC3
+R29
+31
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R34
+R35
+vniosv_intel_niosv_m_0
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v
+Z40 !s110 1782810303
+!i10b 1
+!s100 OiH@gW<ORC9ING5Dgj0EB2
+I4fd0E^EN8nBPaW5:8V9;j0
+R0
+Z41 w1782810146
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v
+!i122 200
+Z42 L0 9 194
+R3
+R4
+r1
+!s85 0
+31
+Z43 !s108 1782810303.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0.v|
+!i113 0
+R6
+R7
+R8
+vniosv_intel_niosv_m_0_hart
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv
+R10
+R30
+!i10b 1
+!s100 E_B7jELo5<Jmj9zf>l?R72
+IXRiONYXH0zHUZS`3=?R:B1
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv
+!i122 222
+L0 25 373
+R3
+R4
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_hart.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_intel_niosv_m_0_irq_mapper
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv
+R10
+R30
+!i10b 1
+!s100 2clXalYZ;zTk5Zl]]3_JN0
+I4TUXTLGgHc_IS4^m0Xd]b3
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv
+!i122 221
+L0 31 27
+R3
+R4
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_intel_niosv_m_0_irq_mapper.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_irq_mapper
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv
+R10
+R40
+!i10b 1
+!s100 <fBnn?`YU4l=>jZU<;7H13
+InIKJ6PGCUMoa7V]kZ6md;0
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv
+!i122 201
+L0 31 26
+R3
+R4
+r1
+!s85 0
+31
+R43
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_irq_mapper.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v
+Z44 !s110 1782810302
+!i10b 1
+!s100 F]?eM>IMY4WBOX3T^?:?a3
+IKJ1kVa3MaG2XS9Jf9XVkC2
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v
+!i122 196
+L0 9 2484
+R3
+R4
+r1
+!s85 0
+31
+Z45 !s108 1782810302.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0.v|
+!i113 0
+R6
+R7
+R8
+vniosv_mm_interconnect_0_avalon_st_adapter
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v
+R44
+!i10b 1
+!s100 Nn9Ta[?SLG]4gEd8C5RkF3
+I]J>595MSIQM0m7`6RZD1d2
+R0
+Z46 w1782810153
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v
+!i122 197
+R42
+R3
+R4
+r1
+!s85 0
+31
+R45
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter.v|
+!i113 0
+R6
+R7
+R8
+vniosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R10
+R11
+!i10b 1
+!s100 @J4[4oBbnBmb?7PAjkG8J0
+I9h7ojN5mZKjBTOQLSGz5E0
+S1
+R0
+R46
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+!i122 202
+L0 66 41
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_cmd_demux
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv
+R10
+R21
+!i10b 1
+!s100 Dm]RU5l?lPSfD<;@XIf0J1
+IGiD`9CiZn9mNdYX5QU8;Y0
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv
+!i122 210
+L0 43 102
+R3
+R4
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_cmd_demux_002
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv
+R10
+R21
+!i10b 1
+!s100 KMn^EOHDziA7dB941?:lQ3
+INj8jG[7En?@UgL=2[bYGZ0
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv
+!i122 209
+Z47 L0 43 72
+R3
+R4
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_demux_002.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_cmd_mux
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv
+R10
+R21
+!i10b 1
+!s100 <`LJ4cZAJ:NS:8S[MWcb>1
+ICJ`NShY78aSN`J03JK:4i3
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv
+!i122 208
+L0 51 306
+R3
+R4
+r1
+!s85 0
+31
+Z48 !s108 1782810305.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_cmd_mux_002
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv
+R10
+Z49 !s110 1782810305
+!i10b 1
+!s100 21XloNPLhA5d=8S39CG5b1
+I7jlneY1=XOELnYUaT@le21
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv
+!i122 207
+L0 51 270
+R3
+R4
+r1
+!s85 0
+31
+R48
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_cmd_mux_002.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router
+Z50 2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv
+R10
+R19
+!i10b 1
+!s100 oZ6DO4BBRo<kD7blTL4N82
+IYXLZ>kLM;?UV4S?]N:Y`M0
+S1
+R0
+R2
+Z51 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv
+Z52 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv
+!i122 216
+L0 84 156
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z53 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv|
+Z54 !s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_002
+Z55 2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv
+R10
+R1
+!i10b 1
+!s100 8c2T3DiY08dhlSbCE[J@72
+I_@@f4mK0l0IYXUGXQB;RS2
+S1
+R0
+R2
+Z56 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv
+Z57 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv
+!i122 215
+Z58 L0 84 142
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z59 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv|
+Z60 !s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_002.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_002_default_decode
+R55
+R10
+R1
+!i10b 1
+!s100 5_E?1;>o?Q1AEjkBCUfA41
+Izz8goQGc:GGoN92a3IbD71
+S1
+R0
+R2
+R56
+R57
+!i122 215
+Z61 L0 45 37
+R3
+R4
+r1
+!s85 0
+31
+R5
+R59
+R60
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_004
+Z62 2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv
+R10
+R1
+!i10b 1
+!s100 >G@<>W^IW9<gNX0VX][8C0
+ICI[P;LbkaVXU1L;4WXB4M1
+S1
+R0
+R2
+Z63 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv
+Z64 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv
+!i122 214
+L0 84 150
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z65 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv|
+Z66 !s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_004.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_004_default_decode
+R62
+R10
+R1
+!i10b 1
+!s100 @DNDLgNV`zAl3EU_ccO`d2
+I5B[B7VTB1U^NHQUoCHJCP3
+S1
+R0
+R2
+R63
+R64
+!i122 214
+R61
+R3
+R4
+r1
+!s85 0
+31
+R5
+R65
+R66
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_006
+Z67 2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv
+R10
+R1
+!i10b 1
+!s100 U?BAlR:7b:KmVDT?a2S6N3
+I^V7dB`n8e[DK`2J_J;HN:0
+S1
+R0
+R2
+Z68 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv
+Z69 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv
+!i122 213
+R58
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z70 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv|
+Z71 !s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_router_006.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_006_default_decode
+R67
+R10
+R1
+!i10b 1
+!s100 B24hH6WRnX2G1e@kf=bQ62
+I>=63`RJ=N=h<SM9lU@X<00
+S1
+R0
+R2
+R68
+R69
+!i122 213
+R61
+R3
+R4
+r1
+!s85 0
+31
+R5
+R70
+R71
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_router_default_decode
+R50
+R10
+R19
+!i10b 1
+!s100 b;@ZPQa^XESN:h:=lI<l@0
+IU^R`9JJ^Koc5FK4SzlY0Q1
+S1
+R0
+R2
+R51
+R52
+!i122 216
+R61
+R3
+R4
+r1
+!s85 0
+31
+R5
+R53
+R54
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_rsp_demux_002
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv
+R10
+R49
+!i10b 1
+!s100 Vc]SeYBHll>H892DE2:mS2
+IgX?1f;@9V99nWQ@5YLAR>0
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv
+!i122 206
+R47
+R3
+R4
+r1
+!s85 0
+31
+R48
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_demux_002.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_rsp_mux
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv
+R10
+R49
+!i10b 1
+!s100 TOm8@X^2<kA3dlKaelX^;2
+IR>MY0m]3efF_TKn?FCQY:3
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv
+!i122 205
+L0 51 333
+R3
+R4
+r1
+!s85 0
+31
+R48
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_mm_interconnect_0_rsp_mux_002
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+R10
+R11
+!i10b 1
+!s100 V=[1:jcHd3[4dI3h8gj?81
+Ij=PRD=m=e3<]M=fgjcKKg2
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv
+!i122 203
+L0 51 293
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv|
+!s90 -reportprogress|300|-sv|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_mm_interconnect_0_rsp_mux_002.sv|
+!i113 0
+R17
+R18
+R8
+vniosv_onchip_memory2_0
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v
+R40
+!i10b 1
+!s100 @RNTT^OOUGI]VoZb?>TCJ0
+ICiA0WLGQkinK;;Y3JgKMh0
+R0
+R41
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v
+!i122 199
+L0 21 68
+R3
+R4
+r1
+!s85 0
+31
+R43
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_onchip_memory2_0.v|
+!i113 0
+R6
+R7
+R8
+vniosv_pio_0
+2C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v
+R40
+!i10b 1
+!s100 J1H?>USUzORGL`g1F_32T2
+Iz>EDC[78lafGzbH=RhDL:1
+R0
+R41
+8C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v
+FC:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v
+!i122 198
+L0 21 46
+R3
+R4
+r1
+!s85 0
+31
+R43
+!s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v|
+!s90 -reportprogress|300|-work|niosv|+incdir+C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules|C:/Users/adria/OneDrive/Desktop/progetti Quartus/niosv/niosv/synthesis/submodules/niosv_pio_0.v|
+!i113 0
+R6
+R7
+R8

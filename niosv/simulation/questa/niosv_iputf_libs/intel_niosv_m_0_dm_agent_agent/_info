@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/simulation/questa
+valtera_merlin_burst_uncompressor
+2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1782933999
+!i10b 1
+!s100 i1bZWNRMIH?]A3dHeHSfg2
+IzP;`KWAhPDgK`nFlKokVO2
+S1
+R0
+Z2 w1782919077
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv
+!i122 1
+L0 40 256
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1782933999.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_burst_uncompressor.sv|-work|intel_niosv_m_0_dm_agent_agent|
+!i113 0
+Z5 o-sv -work intel_niosv_m_0_dm_agent_agent -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0 defaultOptions 1085333592
+valtera_merlin_slave_agent
+2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_slave_agent.sv
+R1
+!s110 1782933998
+!i10b 1
+!s100 `Jk3V=>3M_hG;9XA<JLiI3
+I@h0M4CCY8jzUh8DOU4kz53
+S1
+R0
+R2
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_slave_agent.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_slave_agent.sv
+!i122 0
+L0 34 588
+R3
+R4
+r1
+!s85 0
+31
+!s108 1782933998.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_merlin_slave_agent.sv|-work|intel_niosv_m_0_dm_agent_agent|
+!i113 0
+R5
+R6

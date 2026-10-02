@@ -1,0 +1,1363 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package memTypes is
+
+    type mem_type is array (0 to 127) of std_logic_vector(31 downto 0);
+    type reg_array is array (0 to 31) of std_logic_vector(31 downto 0);
+
+end package;
+
+----------------------------------------------
+------------------ ALU -----------------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ALU is
+    port (
+        SrcA       : in  std_logic_vector(31 downto 0);
+        SrcB       : in  std_logic_vector(31 downto 0);
+        ALUControl : in  std_logic_vector(3 downto 0);
+        ALUResult  : out std_logic_vector(31 downto 0);
+        Zero       : out std_logic;
+        Cout       : out std_logic  
+    );
+end;
+
+architecture funcAlu of ALU is
+    signal flags, flagu : std_logic := '0';
+    signal alu_out      : std_logic_vector(31 downto 0) := (others => '0');
+    signal c_out        : std_logic := '0';
+    constant ZERO32     : std_logic_vector(31 downto 0) := (others => '0');
+begin
+
+    -- Flag per le istruzioni slt
+    flags <= '1' when signed(SrcA) < signed(SrcB) else '0';
+    flagu <= '1' when unsigned(SrcA) < unsigned(SrcB) else '0';
+
+    -- Selezione dell'operazione con "ALUControl"
+    with ALUControl select
+        alu_out <=
+            std_logic_vector(signed(SrcA) + signed(SrcB))                           when "0000",
+            std_logic_vector(signed(SrcA) - signed(SrcB))                           when "0001",
+            (SrcA and SrcB)                                                         when "0010",
+            (SrcA or SrcB)                                                          when "0011",
+            (SrcA xor SrcB)                                                         when "0100",
+            std_logic_vector(shift_left(unsigned(SrcA), to_integer(unsigned(SrcB(4 downto 0))))) when "0101",
+            std_logic_vector(shift_right(unsigned(SrcA), to_integer(unsigned(SrcB(4 downto 0))))) when "0110",
+            std_logic_vector(shift_right(signed(SrcA), to_integer(unsigned(SrcB(4 downto 0))))) when "0111",
+            (31 downto 1 => '0') & flags                                            when "1000",
+            (31 downto 1 => '0') & flagu                                            when "1001",
+            ZERO32                                                                  when others;
+
+    -- Flag per risultato nullo
+    Zero <= '1' when alu_out = ZERO32 else '0';
+
+    -- Carry out per ADD/SUB (solo operazioni aritmetiche)
+    process(SrcA, SrcB, ALUControl)
+        variable tmp : unsigned(32 downto 0);
+    begin
+        case ALUControl is
+            when "0000" =>  -- ADD
+                tmp := ('0' & unsigned(SrcA)) + ('0' & unsigned(SrcB));
+                Cout <= tmp(32);
+            when "0001" =>  -- SUB
+		    if unsigned(SrcA) >= unsigned(SrcB) then
+		        Cout <= '1';
+		    else
+		        Cout <= '0';
+		    end if;
+            when others =>
+                Cout <= '0';
+        end case;
+    end process;
+
+    ALUResult <= alu_out;
+
+end;
+
+
+----------------------------------------------
+-------------- Control Unit ------------------
+----------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ControlUnit is
+    Port (
+        op        : in  std_logic_vector(6 downto 0); -- Instr(6:0)
+        func3     : in  std_logic_vector(2 downto 0); -- Instr(14:12)
+        func7     : in  std_logic;                    -- Instr(30)
+        RegWrite  : out std_logic;
+        MemWrite  : out std_logic;
+        JumpType  : out std_logic;
+        ResultSrc : out std_logic_vector(1 downto 0);
+        ALUSrcA   : out std_logic_vector(1 downto 0);
+        ALUSrcB   : out std_logic;
+        ImmSrc    : out std_logic_vector(2 downto 0);
+        ALUControl: out std_logic_vector(3 downto 0);
+        Jump      : out std_logic;
+        Branch    : out std_logic;
+        opi       : out integer                       -- Non necessario, ma utile nel debugging
+    );
+end;
+
+architecture funcCu of ControlUnit is
+    signal op_i  : integer := 0;
+    signal ALUOp : std_logic_vector(1 downto 0) := "00";
+
+begin
+
+    -- Decodifica op in integer
+    op_i <= to_integer(unsigned(op));
+    opi  <= op_i;
+
+    -- JumpType (Main Decoder)
+    JumpType <= '1' when op_i = 103;
+
+    -- ResultSrc
+    with op_i select
+        ResultSrc <= "01" when 3,
+                      "10" when 103 | 111,
+                      "00" when others;
+
+    -- RegWrite
+    RegWrite <= '1' when 
+                 (op_i = 3  or op_i = 19 or op_i = 23 or 
+                  op_i = 51 or op_i = 55 or op_i = 103 or op_i = 111)
+                else '0';
+
+    -- MemWrite
+    MemWrite <= '1' when op_i = 35 else '0';
+
+    -- ALUSrcA
+    with op_i select
+        ALUSrcA <=  "01" when 23,
+                   "10" when 55,
+                   "00" when others;
+   
+   --ALUSrcB
+   with op_i select
+       ALUSrcB <= '1' when 3|19|23|35|55,
+       		  '0' when others;
+
+    -- ImmSrc
+    ImmSrc <= "000" when (op_i = 3 or op_i = 103 or (op_i = 19 and (func3 = "000" or func3 = "010" or func3 = "011" or
+                           func3 = "100" or func3 = "110" or func3 = "111"))) else
+              "001" when (op_i = 19 and (func3 = "001" or func3 = "101")) else
+              "010" when op_i = 35 else
+              "011" when op_i = 99 else
+              "100" when op_i = 111 else
+              "101" when (op_i = 23 or op_i = 55) else
+              "000";
+
+    -- ALUOp
+    with op_i select
+        ALUOp <= "00" when 3 | 23 | 35 | 55,
+                  "01" when 99,
+                  "10" when 19 | 51,
+                  "00" when others;
+
+    -- ALUControl (ALU Decoder)
+    ALUControl <= "0000" when ALUOp = "00" else
+                  "0001" when ALUOp = "01" else
+                  "0000" when (ALUOp = "10" and func3 = "000" and op(5) = '0') else
+                  "0001" when (ALUOp = "10" and func3 = "000" and op(5) = '1' and func7 = '1') else
+                  "0000" when (ALUOp = "10" and func3 = "000" and op(5) = '1' and func7 = '0') else
+                  "0101" when (ALUOp = "10" and func3 = "001") else
+                  "1000" when (ALUOp = "10" and func3 = "010") else
+                  "1001" when (ALUOp = "10" and func3 = "011") else
+                  "0100" when (ALUOp = "10" and func3 = "100") else
+                  "0110" when (ALUOp = "10" and func3 = "101" and func7 = '0') else
+                  "0111" when (ALUOp = "10" and func3 = "101" and func7 = '1') else
+                  "0011" when (ALUOp = "10" and func3 = "110") else
+                  "0010" when (ALUOp = "10" and func3 = "111") else
+                  "0000";
+
+    -- Branch
+    Branch <= '1' when op_i = 99 else '0';
+    
+    --Jump
+    Jump <= '1' when (op_i = 103 or op_i = 111) else '0';
+end;
+
+----------------------------------------------
+---------------- Brancher --------------------
+----------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Brancher is
+    Port (
+        A         : in  std_logic;                
+        B         : in  std_logic;
+        D         : in  std_logic;
+        Zero      : in  std_logic;
+        Cout      : in  std_logic;
+        Jump      : in  std_logic;
+        Branch    : in  std_logic;
+        func3     : in  std_logic_vector(2 downto 0);
+        PCsrc     : out std_logic
+    );
+end;
+
+architecture funcBr of Brancher is
+    signal tbr   : std_logic := '0';
+    signal Bs    : std_logic := '0';
+    signal Ov    : std_logic := '0';
+begin
+    -- Circuito per il segno del branch (blt, bge)
+    Ov <= (A and (not B) and (not D)) or ((not A) and B and D);
+    Bs <= ((A xor B) and A) or ((not (A xor B)) and (D xor Ov));
+
+    -- Tipo di branch
+    tbr <= Zero     when func3 = "000" else	-- beq
+           not Zero when func3 = "001" else	-- bneq
+           Bs       when func3 = "100" else	-- blt
+           not Bs   when func3 = "101" else	-- bge
+           not Cout when func3 = "110" else	-- bltu
+           Cout     when func3 = "111" else	-- bgeu
+           '0';
+
+    -- PCsrc 
+    PCsrc <= '1' when (Branch = '1' and tbr = '1') or Jump = '1'
+             else '0';
+end;
+
+
+----------------------------------------------
+--------------- Data Memory ------------------
+----------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use work.memTypes.all;
+
+entity DataMemory is
+    Port (
+        CLK : in std_logic;
+        A   : in std_logic_vector(31 downto 0);
+        WD  : in std_logic_vector(31 downto 0);
+        WE  : in std_logic;
+        CW  : in std_logic_vector(2 downto 0);
+        RD  : out std_logic_vector(31 downto 0);
+        MEM_OUT : out mem_type
+    );
+end;
+
+architecture funcDm of DataMemory is
+    signal MEM : mem_type :=  (others => (others => '0'));
+    signal addr : integer range 0 to 127 := 0;
+
+begin
+    -- Decodifica indice (word addressable)
+    addr <= to_integer(unsigned(A(8 downto 2)));
+    -- Lettura asincrona
+    RD <= MEM(addr);
+    MEM_OUT <= MEM;
+    -- Scrittura sincrona
+    process(CLK)
+    begin
+        if rising_edge(CLK) then
+            if WE = '1' then
+                case CW is
+                    -- sb
+                    when "000" =>
+                        MEM(addr)(7 downto 0) <= WD(7 downto 0);
+		    -- sh
+                    when "001" =>
+                        MEM(addr)(15 downto 0) <= WD(15 downto 0);
+		    -- sw
+                    when "010" =>
+                        MEM(addr) <= WD;
+                    when others =>
+                        null;
+                end case;
+            end if;
+        end if;
+    end process;
+end;
+
+
+----------------------------------------------
+----------- Instruction Memory ---------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.memTypes.all;
+
+entity InstructionMemory is
+    port(
+        A   : in  std_logic_vector(31 downto 0);  
+        RD  : out std_logic_vector(31 downto 0)  
+    );
+end;
+
+architecture funcIm of InstructionMemory is
+    -- Memoria preprogrammata
+    signal ROM : mem_type := (
+        0  => x"00500113",
+        1  => x"00C00193",
+        2  => x"FF718393",
+        3  => x"0023E233",
+        4  => x"0041F2B3",
+        5  => x"004282B3",
+        6  => x"02728863",
+        7  => x"0041A233",
+        8  => x"00020463",
+        9  => x"00000293",
+        10 => x"0023A233",
+        11 => x"005203B3",
+        12 => x"402383B3",
+        13 => x"0471AA23",
+        14 => x"06002103",
+        15 => x"005104B3",
+        16 => x"008001EF",
+        17 => x"00100113",
+        18 => x"00910133",
+        19 => x"0221A023",
+        20 => x"00210063",
+        others => (others => '0')
+    );
+    signal addr      : integer range 0 to 127 := 0;
+
+begin
+    -- Decodifica indice (word addressable)
+    addr <= to_integer(unsigned(A(8 downto 2)));
+    -- Lettura asincrona
+    RD <= ROM(addr);
+end;
+
+
+
+----------------------------------------------
+----------- Immediate Extender ---------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ImmExt is
+    port(
+        Instr   : in  std_logic_vector(31 downto 7);  
+        ImmSrc  : in  std_logic_vector(2 downto 0);
+        ImmRes  : out std_logic_vector(31 downto 0)
+    );
+end;
+
+architecture funcIe of ImmExt is
+begin
+    -- Implementazione con process (non necessaria poichè circuito combinatorio, ma comoda)
+    process(Instr, ImmSrc)
+    begin
+        case ImmSrc is
+            -- 000 : I-type immediato (sign-extend)
+            when "000" =>
+                ImmRes <= (31 downto 12 => Instr(31)) & Instr(31 downto 20);
+            -- 001 : Shift-immediate (zero-extend)
+            when "001" =>
+                ImmRes <= (31 downto 5 => '0') & Instr(24 downto 20);
+            -- 010 : S-type
+            when "010" =>
+                ImmRes <= (31 downto 12 => Instr(31)) &
+                           Instr(31 downto 25) &
+                           Instr(11 downto 7);
+            -- 011 : B-type
+            when "011" =>
+                ImmRes <= (31 downto 12 => Instr(31)) &
+                           Instr(7) &
+                           Instr(30 downto 25) &
+                           Instr(11 downto 8) &
+                           '0';
+            -- 100 : J-type 
+            when "100" =>
+                ImmRes <= (31 downto 20 => Instr(31)) &
+                           Instr(19 downto 12) &
+                           Instr(20) &
+                           Instr(30 downto 21) &
+                           '0';
+            -- 101 : U-type 
+            when "101" =>
+                ImmRes <= Instr(31 downto 12) & (11 downto 0 => '0');
+            when others =>
+                ImmRes <= (others => '0');
+        end case;
+    end process;
+end;
+
+
+
+----------------------------------------------
+----------- Read-Data Modifier ---------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity RDext is
+    port(
+        RDprov  : in  std_logic_vector(31 downto 0);
+        RDctrl  : in  std_logic_vector(2 downto 0);
+        ReadData: out std_logic_vector(31 downto 0)
+    );
+end;
+
+architecture funcRd of RDext is
+begin
+    -- Implementazione con process (non necessaria poichè circuito combinatorio, ma comoda)
+    process(RDprov, RDctrl)
+    begin
+        case RDctrl is
+            -- 000 : sign-extend byte
+            when "000" =>
+                ReadData <= (31 downto 8 => RDprov(7)) & RDprov(7 downto 0);
+            -- 001 : sign-extend halfword
+            when "001" =>
+                ReadData <= (31 downto 16 => RDprov(15)) & RDprov(15 downto 0);
+            -- 010 : word intero
+            when "010" =>
+                ReadData <= RDprov;
+            -- 100 : zero-extend byte
+            when "100" =>
+                ReadData <= (31 downto 8 => '0') & RDprov(7 downto 0);
+            -- 101 : zero-extend halfword
+            when "101" =>
+                ReadData <= (31 downto 16 => '0') & RDprov(15 downto 0);
+            when others =>
+                ReadData <= (others => '0');
+        end case;
+    end process;
+end;
+
+
+----------------------------------------------
+-------------- Register File -----------------
+----------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use work.memTypes.all;
+
+entity RegisterFile is
+    Port (
+        CLK : in std_logic;
+        A1  : in std_logic_vector(4 downto 0);
+        A2  : in std_logic_vector(4 downto 0);
+        A3  : in std_logic_vector(4 downto 0);
+        WE3 : in std_logic;
+        WD3 : in std_logic_vector(31 downto 0);
+        RD1 : out std_logic_vector(31 downto 0);
+        RD2 : out std_logic_vector(31 downto 0);
+        MEM_OUT : out reg_array
+    );
+end;
+
+architecture funcRf of RegisterFile is
+    signal R : reg_array := (others => (others => '0'));
+
+begin
+   -- Lettura asincrona
+   RD1 <= R(to_integer(unsigned(A1)));
+   RD2 <= R(to_integer(unsigned(A2)));
+   MEM_OUT <= R;
+    -- Scrittura sincrona (falling edge)
+    process(CLK)
+    begin
+        if falling_edge(CLK) then
+            if (WE3 = '1' and A3 /= "00000") then
+                R(to_integer(unsigned(A3))) <= WD3;
+            end if;
+        end if;
+    end process;
+end;
+
+
+
+----------------------------------------------
+------------- Registro del PC ----------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PcReg is
+    port (
+        clk    : in  std_logic;
+        PcNext : in  std_logic_vector(31 downto 0);
+        en     : in std_logic;
+        Pc     : out std_logic_vector(31 downto 0)
+    );
+end;
+
+architecture funcPc of PcReg is
+    signal pc_reg : std_logic_vector(31 downto 0) := (others => '0');
+begin
+    -- Registro sincrono
+    process(clk, en)
+    begin
+        if rising_edge(clk) and en = '1' then
+            pc_reg <= PcNext;
+        end if;
+    end process;
+    Pc <= pc_reg;
+end;
+
+----------------------------------------------
+--------------- Registro F-D -----------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity FDRegister is
+    port(
+        clk      : in std_logic;
+        en       : in std_logic;
+        clr      : in std_logic;  -- flush D
+        InstrF   : in std_logic_vector(31 downto 0);
+        PCF      : in std_logic_vector(31 downto 0);
+        PCPlus4F : in std_logic_vector(31 downto 0);
+        InstrD   : out std_logic_vector(31 downto 0);
+        PCD      : out std_logic_vector(31 downto 0);
+        PCPlus4D : out std_logic_vector(31 downto 0)
+    );
+end;
+
+architecture FDR of FDRegister is
+    signal instr_reg, pc_reg, pcp4_reg : std_logic_vector(31 downto 0);
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if clr = '1' then  -- flush D
+                instr_reg <= (others => '0');
+                pc_reg    <= (others => '0');
+                pcp4_reg  <= (others => '0');
+            elsif en = '1' then
+                instr_reg <= InstrF;
+                pc_reg    <= PCF;
+                pcp4_reg  <= PCPlus4F;
+            end if;
+        end if;
+    end process;
+
+    InstrD   <= instr_reg;
+    PCD      <= pc_reg;
+    PCPlus4D <= pcp4_reg;
+end FDR;
+
+----------------------------------------------
+--------------- Registro D-E -----------------
+----------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity DERegister is
+    port(
+        clk      : in std_logic;
+        clr      : in std_logic;  -- flush E
+        
+        -- ingressi
+        RegWriteD : in std_logic;
+        ResultSrcD : in std_logic_vector(1 downto 0);
+        MemWriteD  : in std_logic;
+        JumpD : in std_logic;
+        BranchD : in std_logic;
+        ALUControlD: in std_logic_vector(3 downto 0);
+        ALUSrcAD : in std_logic_vector(1 downto 0);
+        ALUSrcBD : in std_logic;
+        jumpTypeD : in std_logic;
+        Rd1D : in std_logic_vector(31 downto 0);
+        Rd2D: in std_logic_vector(31 downto 0);
+        PCD : in std_logic_vector(31 downto 0);
+        Rs1D : in std_logic_vector(4 downto 0);
+        Rs2D : in std_logic_vector(4 downto 0);
+        RdD  : in std_logic_vector(4 downto 0);
+        ImmExtD : in std_logic_vector(31 downto 0);
+        func3D : in std_logic_vector(2 downto 0);
+        PCPlus4D : in std_logic_vector(31 downto 0);
+        
+        -- uscite
+        RegWriteE : out std_logic;
+        ResultSrcE : out std_logic_vector(1 downto 0);
+        MemWriteE  : out std_logic;
+        JumpE : out std_logic;
+        BranchE : out std_logic;
+        ALUControlE: out std_logic_vector(3 downto 0);
+        ALUSrcAE : out std_logic_vector(1 downto 0);
+        ALUSrcBE : out std_logic;
+        jumpTypeE : out std_logic;
+        Rd1E : out std_logic_vector(31 downto 0);
+        Rd2E: out std_logic_vector(31 downto 0);
+        PCE : out std_logic_vector(31 downto 0);
+        Rs1E : out std_logic_vector(4 downto 0);
+        Rs2E : out std_logic_vector(4 downto 0);
+        RdE  : out std_logic_vector(4 downto 0);
+        ImmExtE : out std_logic_vector(31 downto 0);
+        func3E : out std_logic_vector(2 downto 0);
+        PCPlus4E : out std_logic_vector(31 downto 0)
+    );
+end DERegister;
+
+architecture DER of DERegister is
+    -- segnali interni
+    signal RegWrite_reg : std_logic;
+    signal ResultSrc_reg : std_logic_vector(1 downto 0);
+    signal MemWrite_reg : std_logic;
+    signal Jump_reg : std_logic;
+    signal Branch_reg : std_logic;
+    signal ALUControl_reg : std_logic_vector(3 downto 0);
+    signal ALUSrcA_reg : std_logic_vector(1 downto 0);
+    signal ALUSrcB_reg : std_logic;
+    signal jumpType_reg : std_logic;
+    signal Rd1_reg : std_logic_vector(31 downto 0);
+    signal Rd2_reg : std_logic_vector(31 downto 0);
+    signal PC_reg  : std_logic_vector(31 downto 0);
+    signal Rs1_reg : std_logic_vector(4 downto 0);
+    signal Rs2_reg : std_logic_vector(4 downto 0);
+    signal Rd_reg  : std_logic_vector(4 downto 0);
+    signal ImmExt_reg : std_logic_vector(31 downto 0);
+    signal func3_reg : std_logic_vector(2 downto 0);
+    signal PCPlus4_reg : std_logic_vector(31 downto 0);
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if clr = '1' then  -- flush E
+                RegWrite_reg <= '0';
+                ResultSrc_reg <= (others => '0');
+                MemWrite_reg <= '0';
+                Jump_reg <= '0';
+                Branch_reg <= '0';
+                ALUControl_reg <= (others => '0');
+                ALUSrcA_reg <= (others => '0');
+                ALUSrcB_reg <= '0';
+                jumpType_reg <= '0';
+                Rd1_reg <= (others => '0');
+                Rd2_reg <= (others => '0');
+                PC_reg  <= (others => '0');
+                Rs1_reg <= (others => '0');
+                Rs2_reg <= (others => '0');
+                Rd_reg  <= (others => '0');
+                ImmExt_reg <= (others => '0');
+                func3_reg <= (others => '0');
+                PCPlus4_reg <= (others => '0');
+            else
+                RegWrite_reg <= RegWriteD;
+                ResultSrc_reg <= ResultSrcD;
+                MemWrite_reg <= MemWriteD;
+                Jump_reg <= JumpD;
+                Branch_reg <= BranchD;
+                ALUControl_reg <= ALUControlD;
+                ALUSrcA_reg <= ALUSrcAD;
+                ALUSrcB_reg <= ALUSrcBD;
+                jumpType_reg <= jumpTypeD;
+                Rd1_reg <= Rd1D;
+                Rd2_reg <= Rd2D;
+                PC_reg  <= PCD;
+                Rs1_reg <= Rs1D;
+                Rs2_reg <= Rs2D;
+                Rd_reg  <= RdD;
+                ImmExt_reg <= ImmExtD;
+                func3_reg <= func3D;
+                PCPlus4_reg <= PCPlus4D;
+            end if;
+        end if;
+    end process;
+
+    -- Uscite
+    RegWriteE <= RegWrite_reg;
+    ResultSrcE <= ResultSrc_reg;
+    MemWriteE <= MemWrite_reg;
+    JumpE <= Jump_reg;
+    BranchE <= Branch_reg;
+    ALUControlE <= ALUControl_reg;
+    ALUSrcAE <= ALUSrcA_reg;
+    ALUSrcBE <= ALUSrcB_reg;
+    jumpTypeE <= jumpType_reg;
+    Rd1E <= Rd1_reg;
+    Rd2E <= Rd2_reg;
+    PCE <= PC_reg;
+    Rs1E <= Rs1_reg;
+    Rs2E <= Rs2_reg;
+    RdE <= Rd_reg;
+    ImmExtE <= ImmExt_reg;
+    func3E <= func3_reg;
+    PCPlus4E <= PCPlus4_reg;
+end DER;
+
+
+----------------------------------------------
+--------------- Registro E-M -----------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity EMRegister is
+	port(
+		clk : in std_logic;
+
+		RegWriteE : in std_logic;
+		ResultSrcE : in std_logic_vector(1 downto 0);
+		MemWriteE  : in std_logic;
+		ALUResultE : in std_logic_vector(31 downto 0);
+		WriteDataE : in std_logic_vector(31 downto 0);
+		RdE  : in std_logic_vector(4 downto 0);
+		func3E : in std_logic_vector(2 downto 0);
+		PCPlus4E : in std_logic_vector(31 downto 0);
+
+		RegWriteM : out std_logic;
+		ResultSrcM : out std_logic_vector(1 downto 0);
+		MemWriteM  : out std_logic;
+		ALUResultM : out std_logic_vector(31 downto 0);
+		WriteDataM : out std_logic_vector(31 downto 0);
+		RdM  : out std_logic_vector(4 downto 0);
+		func3M : out std_logic_vector(2 downto 0);
+		PCPlus4M : out std_logic_vector(31 downto 0)
+	);
+end EMRegister;
+
+architecture EMR of EMRegister is
+
+	-- Registri interni
+	signal RegWrite_reg : std_logic := '0';
+	signal ResultSrc_reg : std_logic_vector(1 downto 0) := (others => '0');
+	signal MemWrite_reg : std_logic := '0';
+	signal ALUResult_reg : std_logic_vector(31 downto 0) := (others => '0');
+	signal WriteData_reg : std_logic_vector(31 downto 0) := (others => '0');
+	signal Rd_reg  : std_logic_vector(4 downto 0) := (others => '0');
+	signal func3_reg : std_logic_vector(2 downto 0) := (others => '0');
+	signal PCPlus4_reg : std_logic_vector(31 downto 0) := (others => '0');
+
+begin
+
+	-- Scrittura sincrona
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			RegWrite_reg <= RegWriteE;
+			ResultSrc_reg <= ResultSrcE;
+			MemWrite_reg <= MemWriteE;
+			ALUResult_reg <= ALUResultE;
+			WriteData_reg <= WriteDataE;
+			Rd_reg <= RdE;
+			func3_reg <= func3E;
+			PCPlus4_reg <= PCPlus4E;
+		end if;
+	end process;
+
+	-- Uscite
+	RegWriteM <= RegWrite_reg;
+	ResultSrcM <= ResultSrc_reg;
+	MemWriteM <= MemWrite_reg;
+	ALUResultM <= ALUResult_reg;
+	WriteDataM <= WriteData_reg;
+	RdM <= Rd_reg;
+	func3M <= func3_reg;
+	PCPlus4M <= PCPlus4_reg;
+
+end EMR;
+
+----------------------------------------------
+--------------- Registro M-W -----------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity MWRegister is
+	port(
+		clk : in std_logic;
+		RegWriteM : in std_logic;
+		ResultSrcM : in std_logic_vector(1 downto 0);
+		ALUResultM : in std_logic_vector(31 downto 0);
+		ReadDataM : in std_logic_vector(31 downto 0);
+		RdM : in std_logic_vector(4 downto 0);
+		PCPlus4M : in std_logic_vector(31 downto 0);
+		RegWriteW : out std_logic;
+		ResultSrcW : out std_logic_vector(1 downto 0);
+		ALUResultW : out std_logic_vector(31 downto 0);
+		ReadDataW : out std_logic_vector(31 downto 0);
+		RdW : out std_logic_vector(4 downto 0);
+		PCPlus4W : out std_logic_vector(31 downto 0)
+	);
+end MWRegister;
+
+architecture MWR of MWRegister is
+
+	-- Registri interni
+	signal RegWrite_reg : std_logic := '0';
+	signal ALUResult_reg : std_logic_vector(31 downto 0);
+	signal ResultSrc_reg : std_logic_vector(1 downto 0) := (others => '0');
+	signal ReadData_reg : std_logic_vector(31 downto 0) := (others => '0');
+	signal Rd_reg : std_logic_vector(4 downto 0) := (others => '0');
+	signal PCPlus4_reg : std_logic_vector(31 downto 0) := (others => '0');
+
+begin
+
+	-- Scrittura sincrona
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			RegWrite_reg <= RegWriteM;
+			ALUResult_reg <= ALUResultM;
+			ResultSrc_reg <= ResultSrcM;
+			ReadData_reg <= ReadDataM;
+			Rd_reg <= RdM;
+			PCPlus4_reg <= PCPlus4M;
+		end if;
+	end process;
+
+	-- Uscite
+	RegWriteW <= RegWrite_reg;
+	ALUResultW <= ALUResult_reg;
+	ResultSrcW <= ResultSrc_reg;
+	ReadDataW <= ReadData_reg;
+	RdW <= Rd_reg;
+	PCPlus4W <= PCPlus4_reg;
+
+end MWR;
+
+
+----------------------------------------------
+--------------- Hazard Unit ------------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity HazardUnit is
+	port(
+		Rs1D : in std_logic_vector(4 downto 0);
+		Rs2D : in std_logic_vector(4 downto 0);
+		Rs1E : in std_logic_vector(4 downto 0);
+		Rs2E : in std_logic_vector(4 downto 0);
+		RdE : in std_logic_vector(4 downto 0);
+		RdM : in std_logic_vector(4 downto 0);
+		RdW : in std_logic_vector(4 downto 0);
+		RegWriteM : in std_logic;
+		RegWriteW : in std_logic;
+		ResultSrcE : in std_logic_vector(1 downto 0);
+		PCSrcE : in std_logic;
+		ForwardAE : out std_logic_vector(1 downto 0);
+		ForwardBE : out std_logic_vector(1 downto 0);
+		StallF : out std_logic;
+		StallD : out std_logic;
+		FlushD : out std_logic;
+		FlushE : out std_logic
+	);
+end HazardUnit;
+
+architecture HU of HazardUnit is
+	signal lwStall : std_logic := '0';
+	signal rsMatch : std_logic := '0';
+begin
+	-- FORWARD A 
+	process(Rs1E, RdM, RdW, RegWriteM, RegWriteW)
+	begin
+		if ((Rs1E = RdM) and (RegWriteM = '1')) and (Rs1E /= "00000") then
+			ForwardAE <= "10";
+
+		elsif ((Rs1E = RdW) and (RegWriteW = '1')) and (Rs1E /= "00000") then
+			ForwardAE <= "01";
+
+		else
+			ForwardAE <= "00";
+		end if;
+	end process;
+	-- FORWARD B 
+	process(Rs2E, RdM, RdW, RegWriteM, RegWriteW)
+	begin
+		if ((Rs2E = RdM) and (RegWriteM = '1')) and (Rs2E /= "00000") then
+			ForwardBE <= "10";
+
+		elsif ((Rs2E = RdW) and (RegWriteW = '1')) and (Rs2E /= "00000") then
+			ForwardBE <= "01";
+
+		else
+			ForwardBE <= "00";
+		end if;
+	end process;
+	-- lwStall
+	rsMatch <= '1' when (Rs1D = RdE) or (Rs2D = RdE) else '0';
+	lwStall <= ResultSrcE(0) and rsMatch;
+	-- STALL
+	StallF <= lwStall;
+	StallD <= lwStall;
+	-- FLUSH
+	FlushD <= PCSrcE;
+	FlushE <= lwStall or PCSrcE;
+end HU;
+
+----------------------------------------------
+------------------ CPU -----------------------
+----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.memTypes.all;
+
+entity CPU is
+port(
+-- Input
+clk : in std_logic;
+-- Output
+-- Register File
+RMemOut  : out reg_array;
+-- Segnale per salvare una word e vedere il suo andamento su Gtkwave
+outSign  : out std_logic_vector(31 downto 0)
+);
+end;
+
+architecture funcCpu of CPU is
+
+-- COMPONENTI
+component ALU
+port (
+SrcA       : in  std_logic_vector(31 downto 0);
+SrcB       : in  std_logic_vector(31 downto 0);
+ALUControl : in  std_logic_vector(3 downto 0);
+ALUResult  : out std_logic_vector(31 downto 0);
+Zero       : out std_logic;
+Cout       : out std_logic
+);
+end component;
+
+component ControlUnit
+port (
+op         : in  std_logic_vector(6 downto 0);
+func3      : in  std_logic_vector(2 downto 0);
+func7      : in  std_logic;
+RegWrite   : out std_logic;
+MemWrite   : out std_logic;
+JumpType   : out std_logic;
+ResultSrc  : out std_logic_vector(1 downto 0);
+ALUSrcA    : out std_logic_vector(1 downto 0);
+ALUSrcB    : out std_logic;
+ImmSrc     : out std_logic_vector(2 downto 0);
+ALUControl : out std_logic_vector(3 downto 0);
+Jump       : out std_logic;
+Branch     : out std_logic;
+opi        : out integer
+);
+end component;
+
+component DataMemory
+port (
+CLK : in std_logic;
+A   : in std_logic_vector(31 downto 0);
+WD  : in std_logic_vector(31 downto 0);
+WE  : in std_logic;
+CW  : in std_logic_vector(2 downto 0);
+RD  : out std_logic_vector(31 downto 0);
+MEM_OUT : out mem_type
+);
+end component;
+
+component InstructionMemory
+port(
+A   : in  std_logic_vector(31 downto 0);
+RD  : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component ImmExt
+port(
+Instr   : in  std_logic_vector(31 downto 7);
+ImmSrc  : in  std_logic_vector(2 downto 0);
+ImmRes  : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component RDext
+port(
+RDprov   : in  std_logic_vector(31 downto 0);
+RDctrl   : in  std_logic_vector(2 downto 0);
+ReadData : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component RegisterFile
+port(
+CLK : in std_logic;
+A1  : in std_logic_vector(4 downto 0);
+A2  : in std_logic_vector(4 downto 0);
+A3  : in std_logic_vector(4 downto 0);
+WE3 : in std_logic;
+WD3 : in std_logic_vector(31 downto 0);
+RD1 : out std_logic_vector(31 downto 0);
+RD2 : out std_logic_vector(31 downto 0);
+MEM_OUT : out reg_array
+);
+end component;
+
+component PcReg
+port(
+clk    : in  std_logic;
+PcNext : in  std_logic_vector(31 downto 0);
+en     : in std_logic;
+Pc     : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component FDRegister
+port(
+clk      : in std_logic;
+en       : in std_logic;
+clr      : in std_logic;
+InstrF   : in std_logic_vector(31 downto 0);
+PCF      : in std_logic_vector(31 downto 0);
+PCPlus4F : in std_logic_vector(31 downto 0);
+InstrD   : out std_logic_vector(31 downto 0);
+PCD      : out std_logic_vector(31 downto 0);
+PCPlus4D : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component DERegister
+port(
+clk      : in std_logic;
+clr      : in std_logic;
+RegWriteD : in std_logic;
+ResultSrcD : in std_logic_vector(1 downto 0);
+MemWriteD  : in std_logic;
+JumpD : in std_logic;
+BranchD : in std_logic;
+ALUControlD: in std_logic_vector(3 downto 0);
+ALUSrcAD : in std_logic_vector(1 downto 0);
+ALUSrcBD : in std_logic;
+jumpTypeD : in std_logic;
+Rd1D : in std_logic_vector(31 downto 0);
+Rd2D: in std_logic_vector(31 downto 0);
+PCD : in std_logic_vector(31 downto 0);
+Rs1D : in std_logic_vector(4 downto 0);
+Rs2D : in std_logic_vector(4 downto 0);
+RdD  : in std_logic_vector(4 downto 0);
+ImmExtD : in std_logic_vector(31 downto 0);
+func3D : in std_logic_vector(2 downto 0);
+PCPlus4D : in std_logic_vector(31 downto 0);
+RegWriteE : out std_logic;
+ResultSrcE : out std_logic_vector(1 downto 0);
+MemWriteE  : out std_logic;
+JumpE : out std_logic;
+BranchE : out std_logic;
+ALUControlE: out std_logic_vector(3 downto 0);
+ALUSrcAE : out std_logic_vector(1 downto 0);
+ALUSrcBE : out std_logic;
+jumpTypeE : out std_logic;
+Rd1E : out std_logic_vector(31 downto 0);
+Rd2E: out std_logic_vector(31 downto 0);
+PCE : out std_logic_vector(31 downto 0);
+Rs1E : out std_logic_vector(4 downto 0);
+Rs2E : out std_logic_vector(4 downto 0);
+RdE  : out std_logic_vector(4 downto 0);
+ImmExtE : out std_logic_vector(31 downto 0);
+func3E : out std_logic_vector(2 downto 0);
+PCPlus4E : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component EMRegister
+port(
+clk : in std_logic;
+RegWriteE : in std_logic;
+ResultSrcE : in std_logic_vector(1 downto 0);
+MemWriteE  : in std_logic;
+ALUResultE : in std_logic_vector(31 downto 0);
+WriteDataE : in std_logic_vector(31 downto 0);
+RdE  : in std_logic_vector(4 downto 0);
+func3E : in std_logic_vector(2 downto 0);
+PCPlus4E : in std_logic_vector(31 downto 0);
+RegWriteM : out std_logic;
+ResultSrcM : out std_logic_vector(1 downto 0);
+MemWriteM  : out std_logic;
+ALUResultM : out std_logic_vector(31 downto 0);
+WriteDataM : out std_logic_vector(31 downto 0);
+RdM  : out std_logic_vector(4 downto 0);
+func3M : out std_logic_vector(2 downto 0);
+PCPlus4M : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component MWRegister
+port(
+clk : in std_logic;
+RegWriteM : in std_logic;
+ResultSrcM : in std_logic_vector(1 downto 0);
+ALUResultM : in std_logic_vector(31 downto 0);
+ReadDataM : in std_logic_vector(31 downto 0);
+RdM : in std_logic_vector(4 downto 0);
+PCPlus4M : in std_logic_vector(31 downto 0);
+RegWriteW : out std_logic;
+ResultSrcW : out std_logic_vector(1 downto 0);
+ALUResultW : out std_logic_vector(31 downto 0);
+ReadDataW : out std_logic_vector(31 downto 0);
+RdW : out std_logic_vector(4 downto 0);
+PCPlus4W : out std_logic_vector(31 downto 0)
+);
+end component;
+
+component Brancher
+port(
+A         : in  std_logic;
+B         : in  std_logic;
+D         : in  std_logic;
+Zero      : in  std_logic;
+Cout      : in  std_logic;
+Jump      : in  std_logic;
+Branch    : in  std_logic;
+func3     : in  std_logic_vector(2 downto 0);
+PCsrc     : out std_logic
+);
+end component;
+
+component HazardUnit
+port(
+Rs1D : in std_logic_vector(4 downto 0);
+Rs2D : in std_logic_vector(4 downto 0);
+Rs1E : in std_logic_vector(4 downto 0);
+Rs2E : in std_logic_vector(4 downto 0);
+RdE : in std_logic_vector(4 downto 0);
+RdM : in std_logic_vector(4 downto 0);
+RdW : in std_logic_vector(4 downto 0);
+RegWriteM : in std_logic;
+RegWriteW : in std_logic;
+ResultSrcE : in std_logic_vector(1 downto 0);
+PCSrcE : in std_logic;
+ForwardAE : out std_logic_vector(1 downto 0);
+ForwardBE : out std_logic_vector(1 downto 0);
+StallF : out std_logic;
+StallD : out std_logic;
+FlushD : out std_logic;
+FlushE : out std_logic
+);
+end component;
+
+-- SEGNALI INTERNI
+-- Fetch
+signal PCNextF    : std_logic_vector(31 downto 0) := (others => '0');
+signal StallF     : std_logic := '0';
+signal PCF        : std_logic_vector(31 downto 0) := (others => '0');
+signal PCPlus4F   : std_logic_vector(31 downto 0) := (others => '0');
+signal InstrF     : std_logic_vector(31 downto 0) := (others => '0');
+signal notStallF  : std_logic := '0';
+-- Decode
+signal InstrD       : std_logic_vector(31 downto 0) := (others => '0');
+signal PCD          : std_logic_vector(31 downto 0) := (others => '0');
+signal PCPlus4D     : std_logic_vector(31 downto 0) := (others => '0');
+signal ImmExtD      : std_logic_vector(31 downto 0) := (others => '0');
+signal RD1D         : std_logic_vector(31 downto 0) := (others => '0');
+signal RD2D         : std_logic_vector(31 downto 0) := (others => '0');
+signal StallD       : std_logic := '0';
+signal FlushD       : std_logic := '0';
+signal RegWriteD    : std_logic := '0';
+signal ResultSrcD   : std_logic_vector(1 downto 0) := (others => '0');
+signal MemWriteD    : std_logic := '0';
+signal JumpD        : std_logic := '0';
+signal BranchD      : std_logic := '0';
+signal ALUControlD  : std_logic_vector(3 downto 0) := (others => '0');
+signal ALUSrcAD     : std_logic_vector(1 downto 0) := (others => '0');
+signal ALUSrcBD     : std_logic := '0';
+signal jumpTypeD    : std_logic := '0';
+signal ImmSrcD      : std_logic_vector(2 downto 0) := (others => '0');
+signal notStallD    : std_logic := '0';
+-- Execute
+signal RegWriteE    : std_logic := '0';
+signal ResultSrcE   : std_logic_vector(1 downto 0) := (others => '0');
+signal MemWriteE    : std_logic := '0';
+signal JumpE        : std_logic := '0';
+signal BranchE      : std_logic := '0';
+signal ALUControlE  : std_logic_vector(3 downto 0) := (others => '0');
+signal ALUSrcAE     : std_logic_vector(1 downto 0) := (others => '0');
+signal ALUSrcBE     : std_logic := '0';
+signal jumpTypeE    : std_logic := '0';
+signal PCSrcE       : std_logic := '0';
+signal ZeroE        : std_logic := '0';
+signal CoutE        : std_logic := '0';
+signal RD1E         : std_logic_vector(31 downto 0) := (others => '0');
+signal RD2E         : std_logic_vector(31 downto 0) := (others => '0');
+signal PCE          : std_logic_vector(31 downto 0) := (others => '0');
+signal RS1E         : std_logic_vector(4 downto 0) := (others => '0');
+signal RS2E         : std_logic_vector(4 downto 0) := (others => '0');
+signal RdE          : std_logic_vector(4 downto 0) := (others => '0');
+signal ImmExtE      : std_logic_vector(31 downto 0) := (others => '0');
+signal func3E       : std_logic_vector(2 downto 0) := (others => '0');
+signal PCPlus4E     : std_logic_vector(31 downto 0) := (others => '0');
+signal FlushE       : std_logic := '0';
+signal ForwardAE    : std_logic_vector(1 downto 0) := (others => '0');
+signal ForwardBE    : std_logic_vector(1 downto 0) := (others => '0');
+signal SrcAE        : std_logic_vector(31 downto 0) := (others => '0');
+signal SrcBE        : std_logic_vector(31 downto 0) := (others => '0');
+signal WriteDataE   : std_logic_vector(31 downto 0) := (others => '0');
+signal ALUResultE   : std_logic_vector(31 downto 0) := (others => '0');
+signal PCTargetE    : std_logic_vector(31 downto 0) := (others => '0');
+signal sumPCE       : std_logic_vector(31 downto 0) := (others => '0');
+signal ImmPCE       : std_logic_vector(31 downto 0) := (others => '0');
+signal ReadFirE     : std_logic_vector(31 downto 0) := (others => '0');
+-- Memory
+signal RegWriteM    : std_logic := '0';
+signal ResultSrcM   : std_logic_vector(1 downto 0) := (others => '0');
+signal MemWriteM    : std_logic := '0';
+signal ALUResultM   : std_logic_vector(31 downto 0) := (others => '0');
+signal WriteDataM   : std_logic_vector(31 downto 0) := (others => '0');
+signal ReadDataM    : std_logic_vector(31 downto 0) := (others => '0');
+signal RDProvM      : std_logic_vector(31 downto 0) := (others => '0');
+signal func3M       : std_logic_vector(2 downto 0) := (others => '0');
+signal RdM          : std_logic_vector(4 downto 0) := (others => '0');
+signal PCPlus4M     : std_logic_vector(31 downto 0) := (others => '0');
+-- Writeback
+signal RegWriteW    : std_logic := '0';
+signal ResultSrcW   : std_logic_vector(1 downto 0) := (others => '0');
+signal ReadDataW    : std_logic_vector(31 downto 0) := (others => '0');
+signal RdW          : std_logic_vector(4 downto 0) := (others => '0');
+signal PCPlus4W     : std_logic_vector(31 downto 0) := (others => '0');
+signal ResultW      : std_logic_vector(31 downto 0) := (others => '0');
+signal ALUResultW   : std_logic_vector(31 downto 0) := (others => '0');
+-- Altro
+signal DMemProv   : mem_type                      := (others => (others => '0'));   
+signal RMemProv   : reg_array                     := (others => (others => '0'));    
+signal opi        : integer := 0;
+signal R0  : std_logic_vector(31 downto 0) := (others => '0');
+signal R1  : std_logic_vector(31 downto 0) := (others => '0');
+signal R2  : std_logic_vector(31 downto 0) := (others => '0');
+signal R3  : std_logic_vector(31 downto 0) := (others => '0');
+signal R4  : std_logic_vector(31 downto 0) := (others => '0');
+signal R5  : std_logic_vector(31 downto 0) := (others => '0');
+signal R6  : std_logic_vector(31 downto 0) := (others => '0');
+signal R7  : std_logic_vector(31 downto 0) := (others => '0');
+signal R8  : std_logic_vector(31 downto 0) := (others => '0');
+signal R9  : std_logic_vector(31 downto 0) := (others => '0');
+signal R10 : std_logic_vector(31 downto 0) := (others => '0');
+signal R11 : std_logic_vector(31 downto 0) := (others => '0');
+signal R12 : std_logic_vector(31 downto 0) := (others => '0');
+signal R13 : std_logic_vector(31 downto 0) := (others => '0');
+signal R14 : std_logic_vector(31 downto 0) := (others => '0');
+signal R15 : std_logic_vector(31 downto 0) := (others => '0');
+signal R16 : std_logic_vector(31 downto 0) := (others => '0');
+signal R17 : std_logic_vector(31 downto 0) := (others => '0');
+signal R18 : std_logic_vector(31 downto 0) := (others => '0');
+signal R19 : std_logic_vector(31 downto 0) := (others => '0');
+signal R20 : std_logic_vector(31 downto 0) := (others => '0');
+signal R21 : std_logic_vector(31 downto 0) := (others => '0');
+signal R22 : std_logic_vector(31 downto 0) := (others => '0');
+signal R23 : std_logic_vector(31 downto 0) := (others => '0');
+signal R24 : std_logic_vector(31 downto 0) := (others => '0');
+signal R25 : std_logic_vector(31 downto 0) := (others => '0');
+signal R26 : std_logic_vector(31 downto 0) := (others => '0');
+signal R27 : std_logic_vector(31 downto 0) := (others => '0');
+signal R28 : std_logic_vector(31 downto 0) := (others => '0');
+signal R29 : std_logic_vector(31 downto 0) := (others => '0');
+signal R30 : std_logic_vector(31 downto 0) := (others => '0');
+signal R31 : std_logic_vector(31 downto 0) := (others => '0');
+
+begin
+-- IMPLEMENTAZIONE DATAPATH E CONNESSIONE CON LA CONTROL UNIT
+	-- ALU
+	AU: ALU port map(SrcAE, SrcBE, ALUControlE, ALUResultE, ZeroE, CoutE);
+	-- Control Unit
+	CU: ControlUnit port map(InstrD(6 downto 0), InstrD(14 downto 12), InstrD(30), RegWriteD, MemWriteD, jumpTypeD, ResultSrcD, ALUSrcAD, ALUSrcBD, ImmSrcD, ALUControlD, JumpD, BranchD, opi);
+	-- Data Memory
+	DM: DataMemory port map(clk, AluResultM, WriteDataM, MemWriteM, func3M, RDprovM, DMemProv);
+	-- Instruction memory
+	IM: InstructionMemory port map(PCF, InstrF);
+	-- Immediate Extender
+	IE: ImmExt port map(InstrD(31 downto 7), ImmSrcD, ImmExtD);
+	-- Read Data Extender
+	RE: RDext port map(RDprovM, func3M, ReadDataM);
+	-- Register File
+	RF: RegisterFile port map(clk, InstrD(19 downto 15), InstrD(24 downto 20), RdW, RegWriteW, ResultW, RD1D, RD2D, RMemProv);
+	-- PC Register
+	notStallF <= not(StallF);
+	PR: PcReg port map(clk, PCNextF, notStallF, PCF);
+	-- FD Register
+	notStallD <= not(StallD);
+	FD: FDRegister port map(clk, notStallD, FlushD, InstrF, PCF, PCPlus4F, InstrD, PCD, PCPlus4D);
+	-- DE Register
+	DE: DERegister port map(clk, FlushE, RegWriteD, ResultSrcD, MemWriteD, JumpD, BranchD, ALUControlD, ALUSrcAD, ALUSrcBD, jumpTypeD, RD1D, RD2D, PCD, InstrD(19 downto 15), InstrD(24 downto 20), InstrD(11 downto 7), ImmExtD, InstrD(14 downto 12), PCPlus4D, RegWriteE, ResultSrcE, MemWriteE, JumpE, BranchE, ALUControlE, ALUSrcAE, ALUSrcBE, jumpTypeE, RD1E, RD2E, PCE, RS1E, RS2E, RdE, ImmExtE, func3E, PCPlus4E);
+	-- EM Register
+	EM: EMRegister port map(clk, RegWriteE, ResultSrcE, MemWriteE, ALUResultE, WriteDataE, RdE, func3E, PCPlus4E, RegWriteM, ResultSrcM, MemWriteM, ALUResultM, WriteDataM, RdM, func3M, PCPlus4M);
+	-- MW Register
+	MW: MWRegister port map(clk, RegWriteM, ResultSrcM, ALUResultM, ReadDataM, RdM, PCPlus4M, RegWriteW, ResultSrcW, ALUResultW, ReadDataW, RdW, PCPlus4W);
+	-- Hazard unit
+	HU: HazardUnit port map(InstrD(19 downto 15), InstrD(24 downto 20), RS1E, RS2E, RdE, RdM, RdW, RegWriteM, RegWriteW, ResultSrcE, PCSrcE, ForwardAE, ForwardBE, StallF, StallD, FlushD, FlushE);
+	-- Brancher
+	BR: Brancher port map(SrcAE(31), SrcBE(31), ALUResultE(31), ZeroE, CoutE, JumpE, BranchE, func3E, PCSrcE);
+	--Multiplexer per il PC
+	PCNextF <= PCPlus4F when PCSrcE = '0' else
+	          PCTargetE when PCSrcE = '1';
+	-- Incremento di 4 per il PC
+	PCplus4F <= std_logic_vector(unsigned(PCF) + 4);
+	-- Multiplexer per il forwarding del primo registro
+	ReadFirE <= RD1E when ForwardAE = "00" else
+		 ResultW when ForwardAE = "01" else
+		 ALUResultM when ForwardAE = "10";
+	-- Multiplexer per il forwarding del secondo registro
+	WriteDataE <= RD2E when ForwardBE = "00" else
+		 ResultW when ForwardBE = "01" else
+		 ALUResultM when ForwardBE = "10";
+	-- Multiplexer per la SrcA della ALU
+	SrcAE <= ReadFirE when ALUSrcAE = "00" else
+	        PCE when ALUSrcAE = "01" else
+	        (others => '0') when ALUSrcAE = "10";
+	-- Multiplexer per la SrcB della ALU
+	SrcBE <= WriteDataE when ALUSrcBE = '0' else
+	         ImmExtE when ALUSrcbE = '1';
+	-- Multiplexer per la somma del PC
+	sumPCE <= (others => '0') when jumpTypeE = '0' else
+                 ReadFirE when jumpTypeE = '1';    
+        -- Quantità da sommare al PC
+        ImmPCE <= std_logic_vector(unsigned(sumPCE) + unsigned(ImmExtE));     
+        -- Target eventuale per il PC
+        PCTargetE <= ImmPcE when jumpTypeE = '1' else
+        	     std_logic_vector(unsigned(ImmPCE) + unsigned(PCE));
+        -- Multiplexer per il risultat finale
+        ResultW <= ALUResultW when ResultSrcW = "00" else
+                  ReadDataW when ResultSrcW = "01" else
+                  PCPlus4W when ResultSrcW = "10";                
+                  
+       -- ASSEGNAZIONE OUTPUT
+       -- Data Memory
+       outSign <= DMemProv(25);	-- Utile per la prima testbench      
+       -- Register file
+        RMemOut <= RMemProv;
+	R0  <= RMemProv(0);
+	R1  <= RMemProv(1);
+	R2  <= RMemProv(2);
+	R3  <= RMemProv(3);
+	R4  <= RMemProv(4);
+	R5  <= RMemProv(5);
+	R6  <= RMemProv(6);
+	R7  <= RMemProv(7);
+	R8  <= RMemProv(8);
+	R9  <= RMemProv(9);
+	R10 <= RMemProv(10);
+	R11 <= RMemProv(11);
+	R12 <= RMemProv(12);
+	R13 <= RMemProv(13);
+	R14 <= RMemProv(14);
+	R15 <= RMemProv(15);
+	R16 <= RMemProv(16);
+	R17 <= RMemProv(17);
+	R18 <= RMemProv(18);
+	R19 <= RMemProv(19);
+	R20 <= RMemProv(20);
+	R21 <= RMemProv(21);
+	R22 <= RMemProv(22);
+	R23 <= RMemProv(23);
+	R24 <= RMemProv(24);
+	R25 <= RMemProv(25);
+	R26 <= RMemProv(26);
+	R27 <= RMemProv(27);
+	R28 <= RMemProv(28);
+	R29 <= RMemProv(29);
+	R30 <= RMemProv(30);
+	R31 <= RMemProv(31);	
+end funcCpu;

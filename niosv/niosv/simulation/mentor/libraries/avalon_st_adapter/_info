@@ -1,0 +1,54 @@
+m255
+K4
+z2
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+Eniosv_mm_interconnect_0_avalon_st_adapter
+Z1 w1782980261
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z5 8./../submodules/niosv_mm_interconnect_0_avalon_st_adapter.vhd
+Z6 F./../submodules/niosv_mm_interconnect_0_avalon_st_adapter.vhd
+l0
+L12 1
+VEH11bnRJzSeTS8d4DGGCP2
+!s100 PR0I86XTGkc<I;m4o[PEo3
+Z7 OL;C;2025.2;82
+32
+Z8 !s110 1782981150
+!i10b 1
+Z9 !s108 1782981150.000000
+Z10 !s90 -reportprogress|300|./../submodules/niosv_mm_interconnect_0_avalon_st_adapter.vhd|-work|avalon_st_adapter|
+Z11 !s107 ./../submodules/niosv_mm_interconnect_0_avalon_st_adapter.vhd|
+!i113 0
+Z12 o-work avalon_st_adapter
+Z13 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 41 niosv_mm_interconnect_0_avalon_st_adapter 0 22 EH11bnRJzSeTS8d4DGGCP2
+!i122 5
+l61
+Z15 L44 99
+Z16 VEc``m0T<]No0i@fj>d?hi1
+Z17 !s100 ge^4:^QAB5UUf6aV?gnbd2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13

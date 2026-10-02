@@ -1,0 +1,123 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim
+T_opt
+!i145 1
+!i144 0
+!s110 1774708255
+VU5T=mEYB=bcZmiN<V@CfJ2
+04 31 24 work codificatorehamming_vhd_vec_tst codificatorehamming_arch 1
+=1-1068386eecfb-69c7e61f-91-2d00
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U2 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+Ecodificatorehamming
+Z3 w1774708253
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 bidJP:nVBC?Z<0FfQ6c?51
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx8 cyclonev 19 cyclonev_components 0 22 B^l3n9Pbn_IzFF2INSB@J0
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 IkVUgNVX366BneI70`VBS2
+!i122 2
+R2
+Z11 8codificatorehamming.vho
+Z12 Fcodificatorehamming.vho
+l0
+L37 1
+V[U[HgI]aPgAei6lF`6bfL1
+!s100 @YE=EDJd0;`5N8=^D5SIl3
+Z13 OL;C;2025.2;82
+32
+Z14 !s110 1774708254
+!i10b 1
+Z15 !s108 1774708254.000000
+Z16 !s90 -work|work|codificatorehamming.vho|
+Z17 !s107 codificatorehamming.vho|
+!i113 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Astructure
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 19 codificatorehamming 0 22 [U[HgI]aPgAei6lF`6bfL1
+!i122 2
+l75
+L44 229
+VUJ<GWCDcKziP==9X>QaXS0
+!s100 h`J^?fK_H_`=gD;4;z=[E3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Ecodificatorehamming_vhd_vec_tst
+Z20 w1774708252
+R8
+R9
+!i122 3
+R2
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VZMd<31a==Qif7al6KoiLE1
+!s100 igJYPCD7dMDNLFOXWz2`A3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R18
+R19
+Acodificatorehamming_arch
+R8
+R9
+DEx4 work 31 codificatorehamming_vhd_vec_tst 0 22 ZMd<31a==Qif7al6KoiLE1
+!i122 3
+l45
+L34 67
+V=LaIH5KBEROGfJVflRl8K3
+!s100 aJ;E3>JXhoD5<YE7QD^VH0
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 0
+R18
+R19

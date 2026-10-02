@@ -1,0 +1,199 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/altera_lite/25.1std/questa_fse/win64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off codificatorehamming -c codificatorehamming --vector_source="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/Waveform.vwf" --testbench_file="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/Waveform.vwf.vht"
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Mar 28 15:30:52 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off codificatorehamming -c codificatorehamming --vector_source="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/Waveform.vwf" --testbench_file="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/Waveform.vwf.vht"
+Info (119006): Selected device 5CSEMA5F31C6 for design "codificatorehamming"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/" codificatorehamming -c codificatorehamming
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Mar 28 15:30:53 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/" codificatorehamming -c codificatorehamming
+Info (119006): Selected device 5CSEMA5F31C6 for design "codificatorehamming"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file codificatorehamming.vho in folder "C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Sat Mar 28 15:30:53 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/codificatorehamming.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/altera_lite/25.1std/questa_fse/win64//vsim -c -do codificatorehamming.do
+
+Reading pref.tcl
+
+
+# 2025.2
+
+
+# do codificatorehamming.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+
+# Start time: 15:30:54 on Mar 28,2026
+# vcom -work work codificatorehamming.vho 
+# ** Note: (vcom-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+
+# -- Loading package VITAL_Timing
+
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+
+# -- Loading package cyclonev_components
+
+# -- Compiling entity codificatoreHamming
+
+# -- Compiling architecture structure of codificatoreHamming
+
+# End time: 15:30:54 on Mar 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+
+# Start time: 15:30:54 on Mar 28,2026
+# vcom -work work Waveform.vwf.vht 
+
+# ** Note: (vcom-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+# -- Compiling entity codificatoreHamming_vhd_vec_tst
+
+# -- Compiling architecture codificatoreHamming_arch of codificatoreHamming_vhd_vec_tst
+
+# End time: 15:30:54 on Mar 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# ** Note: (vsim-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -voptargs="+acc" -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.codificatorehamming_vhd_vec_tst 
+# Start time: 15:30:54 on Mar 28,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.codificatorehamming_vhd_vec_tst(codificatorehamming_arch)#1
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.codificatorehamming(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#1
+
+# after#35
+
+# End time: 15:30:56 on Mar 28,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/Waveform.vwf...
+
+Reading C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/codificatorehamming.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/codificatorehamming_20260328153057.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

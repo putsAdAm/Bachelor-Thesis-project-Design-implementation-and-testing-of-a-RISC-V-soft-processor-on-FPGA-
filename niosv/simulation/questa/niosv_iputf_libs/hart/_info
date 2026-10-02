@@ -1,0 +1,1450 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/simulation/questa
+v2T6bny/6kjclaCLTJvuCFA==
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1782934006
+!i10b 0
+!s100 n<P4`f]ZXXo0gEz[5aZNR2
+I:RP^d2^E]J`h[LUGdCEj:2
+!i119 1
+!i8a 23611072
+S1
+R0
+Z3 w1782934006
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_dec.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_dec.sv
+!i122 8
+Z4 L0 12 1
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z7 !s108 1782934006.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_dec.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_dec.sv|-work|hart|
+!i113 0
+Z8 o-sv -work hart -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0 defaultOptions 1085333592
+nb9fd913
+vIJcF/EyPoLQXPG/fyaUCfQ==
+R1
+R2
+!i10b 0
+!s100 lU^GHOc>zfnn?n:]SM6zK3
+I;LK[^A]nMkmJBFE[m5N1o2
+!i119 1
+!i8a 1887612304
+S1
+R0
+R3
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_enc.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_enc.sv
+!i122 7
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1782934005.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_enc.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/altecc_enc.sv|-work|hart|
+!i113 0
+R8
+R9
+nb9fd9e3
+vyf92Bce35ILjIbGx38tMbw==
+R1
+Z11 !s110 1782934005
+!i10b 0
+!s100 k3jdQETPD`56OX:oMYkKo0
+I3n9a=1f7OGBEWdIa5@bSN0
+!i119 1
+!i8a 448857504
+S1
+R0
+Z12 w1782934005
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_dec.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_dec.sv
+!i122 6
+R4
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_dec.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_dec.sv|-work|hart|
+!i113 0
+R8
+R9
+nb995ad3
+v81TKFUyQJNEy1++VEND6ww==
+R1
+R11
+!i10b 0
+!s100 3WO3la0[2?e]Yi1RG7;[d1
+IAhYn75:CK]Cd`g;29PQDG0
+!i119 1
+!i8a 669932464
+S1
+R0
+R12
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_enc.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_enc.sv
+!i122 5
+R4
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_enc.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/ecc_enc.sv|-work|hart|
+!i113 0
+R8
+R9
+nb995c23
+v/J3JlZorSuI+mtCuXUFxFQ==
+R1
+Z13 DXx4 work 16 niosv_opcode_def 0 22 FB@Z2X[L?CNgFogdSXL4m3
+DXx4 work 17 niosv_alu_sv_unit 0 22 1jc2RVeYD03U8heX3iFEA3
+Z14 !s110 1782934008
+R5
+r1
+!s85 0
+!i10b 0
+!s100 Ao>WmNH72F:EK0=2QeOQh0
+I55JI10j?HO[l7WA>254YD3
+!i119 1
+!i8a 474812336
+!s105 niosv_alu_sv_unit
+S1
+R0
+Z15 w1782934008
+Z16 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_alu.sv
+Z17 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_alu.sv
+!i122 17
+R4
+R6
+31
+Z18 !s108 1782934008.000000
+Z19 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_alu.sv|
+Z20 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_alu.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac2335
+XOYHqUAvtlTvK5fBvUrtafVrQxRb1cwDPTr43JEf6Dh4=
+R1
+R13
+R14
+V1jc2RVeYD03U8heX3iFEA3
+r1
+!s85 0
+!i10b 0
+!s100 7?dnWFhmHiVdI0F=Dz^hA0
+I1jc2RVeYD03U8heX3iFEA3
+!i103 1
+!i119 1
+!i8a 960844336
+S1
+R0
+Z21 w1782919077
+R16
+R17
+!i122 17
+Z22 L0 12 0
+R6
+31
+R18
+R19
+R20
+!i113 0
+R8
+R9
+n6a59ac4
+vQUQPU0MngwbRar/8WMsJeA==
+R1
+R13
+DXx4 work 21 niosv_bus_req_sv_unit 0 22 BlD`RNObDg=:jb8UP;T?f2
+R14
+R5
+r1
+!s85 0
+!i10b 0
+!s100 0aTA<lBg3hI05KAMaE2_m0
+IZ_48@YaC4hY3aazlz03D82
+!i119 1
+!i8a 1144557792
+!s105 niosv_bus_req_sv_unit
+S1
+R0
+R15
+Z23 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_bus_req.sv
+Z24 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_bus_req.sv
+!i122 15
+R4
+R6
+31
+R18
+Z25 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_bus_req.sv|
+Z26 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_bus_req.sv|-work|hart|
+!i113 0
+R8
+R9
+nccfc4e1
+Xii/LPAHhf+kRRpnTGAHQVzF8hdATiBnYMSquzBN1dQM=
+R1
+R13
+R14
+VBlD`RNObDg=:jb8UP;T?f2
+r1
+!s85 0
+!i10b 0
+!s100 5gXPnWA3NOnMT]Tif<^Ng2
+IBlD`RNObDg=:jb8UP;T?f2
+!i103 1
+!i119 1
+!i8a 1695073328
+S1
+R0
+R21
+R23
+R24
+!i122 15
+R22
+R6
+31
+R18
+R25
+R26
+!i113 0
+R8
+R9
+n58270a4
+vsJYxrYBIZ5ALEosFvBWxNg==
+R1
+R13
+DXx4 work 20 niosv_c_core_sv_unit 0 22 aNm:[eP4z]DSk=?R@^eC_3
+Z27 !s110 1782934009
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ^N[nDOhE@oBUNhdH6j92g1
+I__hE8i8jPe8f`IRcnecE?3
+!i119 1
+!i8a 1684383088
+!s105 niosv_c_core_sv_unit
+S1
+R0
+Z28 w1782934009
+Z29 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_core.sv
+Z30 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_core.sv
+!i122 20
+R4
+R6
+31
+Z31 !s108 1782934009.000000
+Z32 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_core.sv|
+Z33 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_core.sv|-work|hart|
+!i113 0
+R8
+R9
+n2e60c45
+XLN41JpPRWLdF6K/RfcKhWI1su0LZ+kf1krYXNKToINU=
+R1
+R13
+R27
+VaNm:[eP4z]DSk=?R@^eC_3
+r1
+!s85 0
+!i10b 0
+!s100 G9DBgK1<FDMPYBNF7l0a;0
+IaNm:[eP4z]DSk=?R@^eC_3
+!i103 1
+!i119 1
+!i8a 2130307728
+S1
+R0
+R21
+R29
+R30
+!i122 20
+R22
+R6
+31
+R31
+R32
+R33
+!i113 0
+R8
+R9
+nccb0e84
+vmnsifKgiUPxezWz3l+rvUQ==
+R1
+R13
+DXx4 work 19 niosv_c_csr_sv_unit 0 22 g?D0EoL`HXQ9i_^lZAn3m3
+R27
+R5
+r1
+!s85 0
+!i10b 0
+!s100 g=1R=QoZO<IDLY?8oM>;^3
+IZoNVCoeUfglifj[zH4Elo3
+!i119 1
+!i8a 1319513136
+!s105 niosv_c_csr_sv_unit
+S1
+R0
+R28
+Z34 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_csr.sv
+Z35 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_csr.sv
+!i122 21
+R4
+R6
+31
+R31
+Z36 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_csr.sv|
+Z37 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_csr.sv|-work|hart|
+!i113 0
+R8
+R9
+nc2e5c02
+XHxBUy8GkYz5hkH+NXXOn3auU/BmXPfr+X2ZR+CVHLhI=
+R1
+R13
+R27
+Vg?D0EoL`HXQ9i_^lZAn3m3
+r1
+!s85 0
+!i10b 0
+!s100 <L@eJXDN50nKF`[PSH>4[3
+Ig?D0EoL`HXQ9i_^lZAn3m3
+!i103 1
+!i119 1
+!i8a 460110048
+S1
+R0
+R21
+R34
+R35
+!i122 21
+R22
+R6
+31
+R31
+R36
+R37
+!i113 0
+R8
+R9
+n4fac944
+vb99EhZopKO0a4J7+aIQGKw==
+R1
+R13
+DXx4 work 23 niosv_c_D_stage_sv_unit 0 22 KQWK]NbU3=a8_OdV?m>cd3
+Z38 !s110 1782934010
+R5
+r1
+!s85 0
+!i10b 0
+!s100 9f52ozikHaeo:;gd]Aknn2
+Ihc0nLFD4AfhDaCEDWH[e_0
+!i119 1
+!i8a 805188224
+!s105 niosv_c_D_stage_sv_unit
+S1
+R0
+Z39 w1782934010
+Z40 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_D_stage.sv
+Z41 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_D_stage.sv
+!i122 22
+R4
+R6
+31
+R31
+Z42 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_D_stage.sv|
+Z43 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_D_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nc68995
+XARmDbOwzhmo/XrF/wDQ9p5W34IiibTFxdEQjUTKza08=
+R1
+R13
+R38
+VKQWK]NbU3=a8_OdV?m>cd3
+r1
+!s85 0
+!i10b 0
+!s100 F5n990>3>Z2LFW@DJ4cDB1
+IKQWK]NbU3=a8_OdV?m>cd3
+!i103 1
+!i119 1
+!i8a 1461243760
+S1
+R0
+R21
+R40
+R41
+!i122 22
+R22
+R6
+31
+R31
+R42
+R43
+!i113 0
+R8
+R9
+nc4f40a4
+vJW+kiuE8g1fH2ZXFBKU1Xw==
+R1
+R13
+DXx4 work 23 niosv_c_decoder_sv_unit 0 22 <U=J^nKMAK]Li6dfSan]:2
+R27
+R5
+r1
+!s85 0
+!i10b 0
+!s100 X6LVMbV^zHY4Y5^_kg]1b3
+I>8Q_la5<n5g?[FT]5_AT90
+!i119 1
+!i8a 172586848
+!s105 niosv_c_decoder_sv_unit
+S1
+R0
+R28
+Z44 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_decoder.sv
+Z45 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_decoder.sv
+!i122 19
+R4
+R6
+31
+R31
+Z46 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_decoder.sv|
+Z47 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_decoder.sv|-work|hart|
+!i113 0
+R8
+R9
+nc167492
+X5LSA4bQmJg65+bCC4KHbdilFFprPQj/OVetpVT1PoQc=
+R1
+R13
+R27
+V<U=J^nKMAK]Li6dfSan]:2
+r1
+!s85 0
+!i10b 0
+!s100 Uja;RPSV5nze_2V0kELA13
+I<U=J^nKMAK]Li6dfSan]:2
+!i103 1
+!i119 1
+!i8a 1940353072
+S1
+R0
+R21
+R44
+R45
+!i122 19
+R22
+R6
+31
+R31
+R46
+R47
+!i113 0
+R8
+R9
+ncd23974
+vL2XdB1jFra/CvCUs7u4wjA==
+R1
+R13
+DXx4 work 23 niosv_c_E_stage_sv_unit 0 22 <7NTV8aj[2P9K5BIAk2nV0
+R38
+R5
+r1
+!s85 0
+!i10b 0
+!s100 :cI9ICh87`6k5;UZo;5D92
+Im@YC:P[3:4hi8X0^j`E[33
+!i119 1
+!i8a 1460502128
+!s105 niosv_c_E_stage_sv_unit
+S1
+R0
+R39
+Z48 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_E_stage.sv
+Z49 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_E_stage.sv
+!i122 23
+R4
+R6
+31
+Z50 !s108 1782934010.000000
+Z51 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_E_stage.sv|
+Z52 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_E_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+ndc689e5
+XAvso+jaX99wt/Ag7hIlWtnGkL+b9zmYhHfEtY24p9YU=
+R1
+R13
+R38
+V<7NTV8aj[2P9K5BIAk2nV0
+r1
+!s85 0
+!i10b 0
+!s100 [EfDbXlWCnmF2lXj>m6EW3
+I<7NTV8aj[2P9K5BIAk2nV0
+!i103 1
+!i119 1
+!i8a 1247634544
+S1
+R0
+R21
+R48
+R49
+!i122 23
+R22
+R6
+31
+R50
+R51
+R52
+!i113 0
+R8
+R9
+nc4f6da4
+vQyUyD33W3dSpspjD/v3ickrPA9NkHMtXx0oKOS5YF0M=
+R1
+R13
+DXx4 work 24 niosv_c_M0_stage_sv_unit 0 22 Ee<dGC:6[UhBB2<2^]4<H1
+R38
+R5
+r1
+!s85 0
+!i10b 0
+!s100 jUYOQ11<lMJe_Fz8R]aUj2
+IK?HJ@Z81IGN3[JdY<f@YC0
+!i119 1
+!i8a 1900808848
+!s105 niosv_c_M0_stage_sv_unit
+S1
+R0
+R39
+Z53 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_M0_stage.sv
+Z54 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_M0_stage.sv
+!i122 24
+R4
+R6
+31
+R50
+Z55 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_M0_stage.sv|
+Z56 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_c_M0_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+na843a5
+X329Q6ZSNXrNZfFqLUUL8LCSex23cFLCTER2AgqCFG7Q=
+R1
+R13
+R38
+VEe<dGC:6[UhBB2<2^]4<H1
+r1
+!s85 0
+!i10b 0
+!s100 64onH6f@[`UR9KAL<5:O53
+IEe<dGC:6[UhBB2<2^]4<H1
+!i103 1
+!i119 1
+!i8a 1635642896
+S1
+R0
+R21
+R53
+R54
+!i122 24
+R22
+R6
+31
+R50
+R55
+R56
+!i113 0
+R8
+R9
+n30530c4
+Xf5J+mv/i1Z2w+AjZah/j3A==
+R1
+R13
+Z57 !s110 1782934004
+!i10b 0
+!s100 IHQ9zP=0lJKA4?m:>hYz]0
+I=CkPL`Fa8N:6bzGme3ahF0
+!i119 1
+!i8a 1155612048
+S1
+R0
+Z58 w1782934004
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_clic_pkg.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_clic_pkg.sv
+!i122 2
+R22
+V=CkPL`Fa8N:6bzGme3ahF0
+R6
+r1
+!s85 0
+31
+Z59 !s108 1782934004.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_clic_pkg.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_clic_pkg.sv|-work|hart|
+!i113 0
+R8
+R9
+n293a5c7
+vIC4u8ZPlqumLUNcnwwfioQ==
+R1
+R13
+DXx4 work 14 niosv_clic_pkg 0 22 =CkPL`Fa8N:6bzGme3ahF0
+R2
+!i10b 0
+!s100 S7dN]T1:;MfT<ZM8YdZJg0
+I_zzV<nj5OE0WR1FG]6:Ji1
+!i119 1
+!i8a 1231570960
+S1
+R0
+R3
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csr.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csr.sv
+!i122 10
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csr.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csr.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac2fa2
+vZn2kOtExQauHzTzzBQ5eQRjPDoXpBq90v4A5vNUe53M=
+R1
+R13
+Z60 !s110 1782934007
+!i10b 0
+!s100 n833IjQ>DUF>LMJiUdWb03
+Il@NIJ0e90=Se3<FVajV]71
+!i119 1
+!i8a 1930069792
+S1
+R0
+Z61 w1782934007
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_host.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_host.sv
+!i122 12
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z62 !s108 1782934007.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_host.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_host.sv|-work|hart|
+!i113 0
+R8
+R9
+n8ca58c4
+YiTU6UlSTfNJW7jfJNING0Q==
+R1
+R60
+!i10b 0
+!s100 P=Eb3S5AkUNX6j<^<EiEQ1
+INOJXc<hbY48FY9@`0EV=82
+!i119 1
+!i8a 1516383872
+S1
+R0
+R61
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_if.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_if.sv
+!i122 11
+R22
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_if.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_csrind_if.sv|-work|hart|
+!i113 0
+R8
+R9
+ne68ca56
+v7kJy0PsRqUQvL4fcI4hNUqjgY5X5dRBApaKy+JLV9iQ=
+R1
+R60
+!i10b 0
+!s100 8>HLb=AeMYmT76z`5Sdh63
+IUVI?7hYAD2HjHb?bZd1Ke3
+!i119 1
+!i8a 1157291616
+S1
+R0
+R61
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_instr_buffer.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_instr_buffer.sv
+!i122 14
+R4
+R5
+R6
+r1
+!s85 0
+31
+R62
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_instr_buffer.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_instr_buffer.sv|-work|hart|
+!i113 0
+R8
+R9
+n72e0d02
+vniosv_intel_niosv_m_0_hart
+2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+R1
+Z63 !s110 1782934012
+!i10b 1
+!s100 E_B7jELo5<Jmj9zf>l?R72
+IzDO?cK9l<k_ln`;:QKR^l1
+S1
+R0
+R21
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+!i122 32
+L0 25 373
+R5
+R6
+r1
+!s85 0
+31
+Z64 !s108 1782934012.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_intel_niosv_m_0_hart.sv|-work|hart|
+!i113 0
+R8
+R9
+vhY7uEf8NpCb18KIrDr1b3UwR+lvtxpJltkN7dx/h660=
+R1
+R13
+DXx4 work 31 niosv_interrupt_handler_sv_unit 0 22 b8?Jf;iU[C7`6dKG2Z`<G2
+R60
+R5
+r1
+!s85 0
+!i10b 0
+!s100 >4f[MEkOC^fR@@^jX?nK?0
+Il=YDU<<4dSNCNOHZzkGUh3
+!i119 1
+!i8a 882094512
+!s105 niosv_interrupt_handler_sv_unit
+S1
+R0
+R61
+Z65 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_interrupt_handler.sv
+Z66 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_interrupt_handler.sv
+!i122 13
+R4
+R6
+31
+R62
+Z67 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_interrupt_handler.sv|
+Z68 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_interrupt_handler.sv|-work|hart|
+!i113 0
+R8
+R9
+nbd394f2
+Xiy9bOXrmN8lBiLR1XjGNBICjqmms/X4bSwdn8czW5zY=
+R1
+R13
+R60
+Vb8?Jf;iU[C7`6dKG2Z`<G2
+r1
+!s85 0
+!i10b 0
+!s100 Eeln>IG2;j4k8R<I4g?O`0
+Ib8?Jf;iU[C7`6dKG2Z`<G2
+!i103 1
+!i119 1
+!i8a 1774715616
+S1
+R0
+R21
+R65
+R66
+!i122 13
+R22
+R6
+31
+R62
+R67
+R68
+!i113 0
+R8
+R9
+n9325ab4
+v3d47V/20wwjWt2JYCLnhNw==
+R1
+R13
+DXx4 work 17 niosv_lsu_sv_unit 0 22 N99DXD]c<2I20_dSNmf_j0
+R14
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ABFQE9em2jOo``BIS^F=C2
+IPlKZaBb>S<AeLR?Hh_[im2
+!i119 1
+!i8a 815660080
+!s105 niosv_lsu_sv_unit
+S1
+R0
+R15
+Z69 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_lsu.sv
+Z70 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_lsu.sv
+!i122 18
+R4
+R6
+31
+R18
+Z71 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_lsu.sv|
+Z72 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_lsu.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac36a5
+XgttGD4v0bo7kdrH87LI/tqaJI3hdfqJBTneqM/0z9Ig=
+R1
+R13
+R14
+VN99DXD]c<2I20_dSNmf_j0
+r1
+!s85 0
+!i10b 0
+!s100 KGW@kY2B><^J90`?7hmPA3
+IN99DXD]c<2I20_dSNmf_j0
+!i103 1
+!i119 1
+!i8a 334600880
+S1
+R0
+R21
+R69
+R70
+!i122 18
+R22
+R6
+31
+R18
+R71
+R72
+!i113 0
+R8
+R9
+n6902ac4
+vEIgTNbod/ioRTtde1y+M8A==
+R1
+R13
+DXx4 work 9 riscv_pkg 0 22 WHTmCQgLn1LnXDYAlYJS90
+Z73 !s110 1782934011
+!i10b 0
+!s100 R3iBVU;bBhTZE=GkPdGR=0
+Ia8[S5_ogEcTJVW>n^k5_92
+!i119 1
+!i8a 1963337120
+S1
+R0
+Z74 w1782934011
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_core.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_core.sv
+!i122 26
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z75 !s108 1782934011.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_core.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_core.sv|-work|hart|
+!i113 0
+R8
+R9
+n3860c45
+vhEEPzgY/ldvyRcNE9A0AHQ==
+R1
+R13
+DXx4 work 23 niosv_m_D_stage_sv_unit 0 22 VNEZO^YmWzlRmNliTLo4c3
+R73
+R5
+r1
+!s85 0
+!i10b 0
+!s100 [QW]b0Se>f0G`b6ED1<:h3
+IS:c0<`?a`VZV4DzPd[C[m1
+!i119 1
+!i8a 241443552
+!s105 niosv_m_D_stage_sv_unit
+S1
+R0
+R74
+Z76 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_D_stage.sv
+Z77 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_D_stage.sv
+!i122 28
+R4
+R6
+31
+R75
+Z78 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_D_stage.sv|
+Z79 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_D_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nc69f95
+XjV1TJG+pl6DqpUYI1vWrslObx0YXM8a2FqJe4SgDWGA=
+R1
+R13
+R73
+VVNEZO^YmWzlRmNliTLo4c3
+r1
+!s85 0
+!i10b 0
+!s100 V2Q;Yiama;z]_A=[fdahK1
+IVNEZO^YmWzlRmNliTLo4c3
+!i103 1
+!i119 1
+!i8a 1617122800
+S1
+R0
+R21
+R76
+R77
+!i122 28
+R22
+R6
+31
+R75
+R78
+R79
+!i113 0
+R8
+R9
+nc3940a4
+vb2Cn9/AJQ6x17/ZPE1t/Tw==
+R1
+R13
+DXx4 work 23 niosv_m_decoder_sv_unit 0 22 n3g7`ioT9=D>U0m6U0<hI2
+R38
+R5
+r1
+!s85 0
+!i10b 0
+!s100 zOlMQzZfO`Zil8zMN?clA1
+I:9A6=`5gDY3<Yf[bFKON:1
+!i119 1
+!i8a 1603506512
+!s105 niosv_m_decoder_sv_unit
+S1
+R0
+R39
+Z80 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_decoder.sv
+Z81 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_decoder.sv
+!i122 25
+R4
+R6
+31
+R50
+Z82 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_decoder.sv|
+Z83 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_decoder.sv|-work|hart|
+!i113 0
+R8
+R9
+nc166292
+X5vRWcA9g9vAcXMMx6CTByhQqVoK2rjarVfM3nzfBuIQ=
+R1
+R13
+R38
+Vn3g7`ioT9=D>U0m6U0<hI2
+r1
+!s85 0
+!i10b 0
+!s100 bVSFmOEDk]^fF1LKC8>3E0
+In3g7`ioT9=D>U0m6U0<hI2
+!i103 1
+!i119 1
+!i8a 152429184
+S1
+R0
+R21
+R80
+R81
+!i122 25
+R22
+R6
+31
+R50
+R82
+R83
+!i113 0
+R8
+R9
+nce43974
+vNkfEYNEEAC1TUKveoeQUbQ==
+R1
+R13
+DXx4 work 23 niosv_m_E_stage_sv_unit 0 22 6QHc>ORof3BkC@AZ5jB:23
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ]=z3O`NF@W<<aPa]4R=Pn1
+IzY0lQ7[UPinnXM]YO_lJ>1
+!i119 1
+!i8a 622308528
+!s105 niosv_m_E_stage_sv_unit
+S1
+R0
+Z84 w1782934012
+Z85 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_E_stage.sv
+Z86 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_E_stage.sv
+!i122 29
+R4
+R6
+31
+R75
+Z87 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_E_stage.sv|
+Z88 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_E_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+ndc69fe5
+XkrixsI0UDT1zOrWy4h3OsBwQVNQY97gu0K+XG89qlCI=
+R1
+R13
+R63
+V6QHc>ORof3BkC@AZ5jB:23
+r1
+!s85 0
+!i10b 0
+!s100 _J[<Y1TzG42_h;iAd:=ho2
+I6QHc>ORof3BkC@AZ5jB:23
+!i103 1
+!i119 1
+!i8a 1602089984
+S1
+R0
+R21
+R85
+R86
+!i122 29
+R22
+R6
+31
+R75
+R87
+R88
+!i113 0
+R8
+R9
+nc396da4
+vexbhDKJkFHrA9kL377i8FocZOpQxzJ2TE+LShToIla8=
+R1
+R73
+!i10b 0
+!s100 4Ol`i:R6=jOCX1O:28LaL1
+IRCUQf_NPQ?c9Ac5Kio_Nn3
+!i119 1
+!i8a 1749382352
+S1
+R0
+R74
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_instr_prefetch.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_instr_prefetch.sv
+!i122 27
+R4
+R5
+R6
+r1
+!s85 0
+31
+R75
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_instr_prefetch.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_instr_prefetch.sv|-work|hart|
+!i113 0
+R8
+R9
+n7d5c948
+vTCcMDfwq24YDW2kr2Q1pcwEgeELC+lI7uaZka/+XWHM=
+R1
+R13
+DXx4 work 24 niosv_m_M0_stage_sv_unit 0 22 @4b?f]W5NHo^_m4Ki^84<0
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 SZnD<K[TI;NKbD<_GTI9Q1
+IJdV<0QWkQl04ADD7E^A<P0
+!i119 1
+!i8a 1982059888
+!s105 niosv_m_M0_stage_sv_unit
+S1
+R0
+R84
+Z89 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_M0_stage.sv
+Z90 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_M0_stage.sv
+!i122 30
+R4
+R6
+31
+R64
+Z91 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_M0_stage.sv|
+Z92 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_M0_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+na923a5
+XVs6bt8HbSTbie1v3L/Ezhy+4oySXRRumNSIsajW4eOY=
+R1
+R13
+R63
+V@4b?f]W5NHo^_m4Ki^84<0
+r1
+!s85 0
+!i10b 0
+!s100 V]P`RnRBP1Bo5<M[L[G^E2
+I@4b?f]W5NHo^_m4Ki^84<0
+!i103 1
+!i119 1
+!i8a 1289184320
+S1
+R0
+R21
+R89
+R90
+!i122 30
+R22
+R6
+31
+R64
+R91
+R92
+!i113 0
+R8
+R9
+n3a530c4
+vnO+/qrKYKchyV8Ux35BL+g==
+R1
+R13
+DXx4 work 23 niosv_m_W_stage_sv_unit 0 22 6>NWO>[Q9?4e4T;^b`1=o2
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 [fWQc9]`<b9FNVeUEbQB02
+I^k1ZB>nbT?o@Nb]WhDBj32
+!i119 1
+!i8a 1629110768
+!s105 niosv_m_W_stage_sv_unit
+S1
+R0
+R84
+Z93 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_W_stage.sv
+Z94 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_W_stage.sv
+!i122 31
+R4
+R6
+31
+R64
+Z95 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_W_stage.sv|
+Z96 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_m_W_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nbc69f95
+XaRhk4Y5QyJVqDj95EyHs3WCR5JkeMF0615cctTb89YE=
+R1
+R13
+R63
+V6>NWO>[Q9?4e4T;^b`1=o2
+r1
+!s85 0
+!i10b 0
+!s100 U@Nj6V30cEAR`Ci5OQJQ[3
+I6>NWO>[Q9?4e4T;^b`1=o2
+!i103 1
+!i119 1
+!i8a 602698624
+S1
+R0
+R21
+R93
+R94
+!i122 31
+R22
+R6
+31
+R64
+R95
+R96
+!i113 0
+R8
+R9
+nc3937a4
+vXl3YPDo/d828Qx58rZZ0ly39nkpmaMmNRwVBBz+0xks=
+R1
+R13
+DXx4 work 26 niosv_mem_op_state_sv_unit 0 22 NeWnVM9;c7g]gKHbbImfn1
+R57
+R5
+r1
+!s85 0
+!i10b 0
+!s100 `dj5l_:JRQAO7a2>4[AdA3
+Ill[j_2bLPJa:Uk8U]c[OW1
+!i119 1
+!i8a 834116288
+!s105 niosv_mem_op_state_sv_unit
+S1
+R0
+R58
+Z97 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_mem_op_state.sv
+Z98 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_mem_op_state.sv
+!i122 3
+R4
+R6
+31
+R59
+Z99 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_mem_op_state.sv|
+Z100 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_mem_op_state.sv|-work|hart|
+!i113 0
+R8
+R9
+n706c805
+X0KS7PIClPh6Ornkqquuynit2u+jx1cIAOx6mIsvJB0w=
+R1
+R13
+R57
+VNeWnVM9;c7g]gKHbbImfn1
+r1
+!s85 0
+!i10b 0
+!s100 0ePD]Q;>ngenjWV6YG>cM1
+INeWnVM9;c7g]gKHbbImfn1
+!i103 1
+!i119 1
+!i8a 415384864
+S1
+R0
+R21
+R97
+R98
+!i122 3
+R22
+R6
+31
+R59
+R99
+R100
+!i113 0
+R8
+R9
+nc8ecb64
+Xm2ZIwaexgYgMVpiz3Ow3zDii5LFn6ZZahKJXtrhZeTk=
+R1
+R57
+!i10b 0
+!s100 2amDl3V><3Ka8bbRP6;c61
+IFB@Z2X[L?CNgFogdSXL4m3
+!i119 1
+!i8a 541324896
+S1
+R0
+R58
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_opcode_def.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_opcode_def.sv
+!i122 1
+R22
+VFB@Z2X[L?CNgFogdSXL4m3
+R6
+r1
+!s85 0
+31
+R59
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_opcode_def.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_opcode_def.sv|-work|hart|
+!i113 0
+R8
+R9
+nf6a6db6
+vNpSyhpsFnublpS18jmUNtA==
+R1
+R11
+!i10b 0
+!s100 iA93TB:6P6RYc6QRG:K]h1
+IA0]0ci]ogCYCM>dLKKonK1
+!i119 1
+!i8a 1951825200
+S1
+R0
+R12
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_ram.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_ram.sv
+!i122 4
+R4
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_ram.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_ram.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac1d7d
+vbCdgOS7AddHiaO4DMV97vg==
+R1
+R2
+!i10b 0
+!s100 5`g;HZHW^GX?BJ:4l[N9z2
+I5nf:^Pma6YBkIdBa5XCm:2
+!i119 1
+!i8a 1675271408
+S1
+R0
+R3
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_reg_file.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_reg_file.sv
+!i122 9
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_reg_file.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_reg_file.sv|-work|hart|
+!i113 0
+R8
+R9
+nbbf0ff5
+vCdPCk5Q1A44WVymUqTT4jg==
+R1
+R13
+DXx4 work 19 niosv_shift_sv_unit 0 22 6daS6MDB0M?b@jI_mYz4J2
+R14
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ;Bo_XECi7VK_>]1R[E]Y[3
+IH_OCQ5P?9eUS4S35?]nz?3
+!i119 1
+!i8a 207824224
+!s105 niosv_shift_sv_unit
+S1
+R0
+R15
+Z101 8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_shift.sv
+Z102 FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_shift.sv
+!i122 16
+R4
+R6
+31
+R18
+Z103 !s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_shift.sv|
+Z104 !s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_shift.sv|-work|hart|
+!i113 0
+R8
+R9
+nc1ce974
+Xoj7F0mHYZED3uRCs+32BDP1JJJKKG+KqPbAByMYQ95A=
+R1
+R13
+R14
+V6daS6MDB0M?b@jI_mYz4J2
+r1
+!s85 0
+!i10b 0
+!s100 B_AXN@8[RUBX<]_?[Z>k^3
+I6daS6MDB0M?b@jI_mYz4J2
+!i103 1
+!i119 1
+!i8a 354803056
+S1
+R0
+R21
+R101
+R102
+!i122 16
+R22
+R6
+31
+R18
+R103
+R104
+!i113 0
+R8
+R9
+n66fd374
+XPiweEcjBmyHjxTQ6eE5//w==
+R1
+R57
+!i10b 0
+!s100 6;j:gZBXB3UkbLlD@RZ>@1
+IWHTmCQgLn1LnXDYAlYJS90
+!i119 1
+!i8a 1861032736
+S1
+R0
+R58
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/riscv.pkg.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/riscv.pkg.sv
+!i122 0
+R22
+VWHTmCQgLn1LnXDYAlYJS90
+R6
+r1
+!s85 0
+31
+R59
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/riscv.pkg.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/riscv.pkg.sv|-work|hart|
+!i113 0
+R8
+R9
+n9ac2017

@@ -1,0 +1,9 @@
+2 23 altera_lnsim_components 4 fast 57 c:/altera_lite/25.1std/questa_fse/intel/vhdl/altera_lnsim 0 80 0 0 5608 0
+2 18 cyclonev_atom_pack 4 fast 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 0 80 0 0 620 0
+2 19 cyclonev_components 4 fast 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 0 80 0 0 3091 0
+2 18 cyclonev_atom_pack 4 body 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 0 80 0 0 620 0
+2 19 cyclonev_lcell_comb 16 vital_lcell_comb 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 1 65 0 0 879 0
+2 16 cyclonev_io_ibuf 4 arch 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 1 65 0 0 221 0
+2 16 cyclonev_io_obuf 4 arch 53 c:/altera_lite/25.1std/questa_fse/intel/vhdl/cyclonev 1 65 0 0 381 0
+1 19 codificatorehamming 9 structure 89 C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/work 1 65 0 0 550 0
+2 31 codificatorehamming_vhd_vec_tst 24 codificatorehamming_arch 89 C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/qsim/work 1 65 0 0 96 0

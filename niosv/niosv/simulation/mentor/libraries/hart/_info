@@ -1,0 +1,1450 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+veB8RB3kxl3T60Ynp8gpZMw==
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1782981165
+!i10b 0
+!s100 n<P4`f]ZXXo0gEz[5aZNR2
+Ij@R]XnJKaCVL31W7051fB3
+!i119 1
+!i8a 2118696848
+S1
+R0
+Z3 w1782981165
+8./../submodules/mentor/altecc_dec.sv
+F./../submodules/mentor/altecc_dec.sv
+!i122 173
+Z4 L0 12 1
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z7 !s108 1782981165.000000
+!s107 ./../submodules/mentor/altecc_dec.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/altecc_dec.sv|-work|hart|
+!i113 0
+Z8 o-sv -work hart -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0 defaultOptions 1085333592
+nb9fd913
+ve1rVOsmJkWeMtPhXHStgRA==
+R1
+R2
+!i10b 0
+!s100 lU^GHOc>zfnn?n:]SM6zK3
+IF>0zi23E1NALo4@b6`cH00
+!i119 1
+!i8a 1374390128
+S1
+R0
+R3
+8./../submodules/mentor/altecc_enc.sv
+F./../submodules/mentor/altecc_enc.sv
+!i122 172
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ./../submodules/mentor/altecc_enc.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/altecc_enc.sv|-work|hart|
+!i113 0
+R8
+R9
+nb9fd9e3
+v6asmKFq43L1N+jjyI9tgjw==
+R1
+R2
+!i10b 0
+!s100 k3jdQETPD`56OX:oMYkKo0
+I_MeZhnDSKhc`Mc35`G3WC1
+!i119 1
+!i8a 1478209648
+S1
+R0
+R3
+8./../submodules/mentor/ecc_dec.sv
+F./../submodules/mentor/ecc_dec.sv
+!i122 171
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ./../submodules/mentor/ecc_dec.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/ecc_dec.sv|-work|hart|
+!i113 0
+R8
+R9
+nb995ad3
+vcM8Iq4B3wpzjhrvj5YcmfA==
+R1
+R2
+!i10b 0
+!s100 3WO3la0[2?e]Yi1RG7;[d1
+I[aC@;e:4MD6b;A?G5ReUD0
+!i119 1
+!i8a 889331792
+S1
+R0
+R3
+8./../submodules/mentor/ecc_enc.sv
+F./../submodules/mentor/ecc_enc.sv
+!i122 170
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1782981164.000000
+!s107 ./../submodules/mentor/ecc_enc.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/ecc_enc.sv|-work|hart|
+!i113 0
+R8
+R9
+nb995c23
+v8TRFEQfx7pdVPOSrvCf1Tg==
+R1
+Z11 DXx4 work 16 niosv_opcode_def 0 22 mUCkckRg<V_bmF0LoF`=i2
+DXx4 work 17 niosv_alu_sv_unit 0 22 ZNSbi;iN8DKO2ejb0l:V=0
+Z12 !s110 1782981168
+R5
+r1
+!s85 0
+!i10b 0
+!s100 Ao>WmNH72F:EK0=2QeOQh0
+I@>8[Vl;3N46@eCOh<;e^F0
+!i119 1
+!i8a 1670600000
+!s105 niosv_alu_sv_unit
+S1
+R0
+Z13 w1782981168
+Z14 8./../submodules/mentor/niosv_alu.sv
+Z15 F./../submodules/mentor/niosv_alu.sv
+!i122 182
+R4
+R6
+31
+Z16 !s108 1782981168.000000
+Z17 !s107 ./../submodules/mentor/niosv_alu.sv|
+Z18 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_alu.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac2335
+XvemtMEP+OR1u0iAWcXh+n208Y/C4J0GJPxWCstr8MDE=
+R1
+R11
+R12
+VZNSbi;iN8DKO2ejb0l:V=0
+r1
+!s85 0
+!i10b 0
+!s100 7?dnWFhmHiVdI0F=Dz^hA0
+IZNSbi;iN8DKO2ejb0l:V=0
+!i103 1
+!i119 1
+!i8a 1692431360
+S1
+R0
+Z19 w1782980260
+R14
+R15
+!i122 182
+Z20 L0 12 0
+R6
+31
+R16
+R17
+R18
+!i113 0
+R8
+R9
+n6a59ac4
+vVouX/YrRwIOJS8PdO3y3ng==
+R1
+R11
+DXx4 work 21 niosv_bus_req_sv_unit 0 22 3[naK?l2nhUIAAR9olYod0
+R12
+R5
+r1
+!s85 0
+!i10b 0
+!s100 0aTA<lBg3hI05KAMaE2_m0
+IPbi7[8V4A?3JH<[MkjbTJ0
+!i119 1
+!i8a 1212657840
+!s105 niosv_bus_req_sv_unit
+S1
+R0
+R13
+Z21 8./../submodules/mentor/niosv_bus_req.sv
+Z22 F./../submodules/mentor/niosv_bus_req.sv
+!i122 180
+R4
+R6
+31
+Z23 !s108 1782981167.000000
+Z24 !s107 ./../submodules/mentor/niosv_bus_req.sv|
+Z25 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_bus_req.sv|-work|hart|
+!i113 0
+R8
+R9
+nccfc4e1
+Xkeoy/2wdQhDxvhq1g88F/EJEDMVoX8ayaRKRa0OXjcw=
+R1
+R11
+R12
+V3[naK?l2nhUIAAR9olYod0
+r1
+!s85 0
+!i10b 0
+!s100 5gXPnWA3NOnMT]Tif<^Ng2
+I3[naK?l2nhUIAAR9olYod0
+!i103 1
+!i119 1
+!i8a 949074208
+S1
+R0
+R19
+R21
+R22
+!i122 180
+R20
+R6
+31
+R23
+R24
+R25
+!i113 0
+R8
+R9
+n58270a4
+vH51jDNL+ru0aCNdqExJd9A==
+R1
+R11
+DXx4 work 20 niosv_c_core_sv_unit 0 22 :HiM`>a2h<5R=lok?Tb7;3
+Z26 !s110 1782981169
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ^N[nDOhE@oBUNhdH6j92g1
+I]fTT3RbnEBRI>@XBl5>hV0
+!i119 1
+!i8a 1063617824
+!s105 niosv_c_core_sv_unit
+S1
+R0
+Z27 w1782981169
+Z28 8./../submodules/mentor/niosv_c_core.sv
+Z29 F./../submodules/mentor/niosv_c_core.sv
+!i122 185
+R4
+R6
+31
+Z30 !s108 1782981169.000000
+Z31 !s107 ./../submodules/mentor/niosv_c_core.sv|
+Z32 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_core.sv|-work|hart|
+!i113 0
+R8
+R9
+n2e60c45
+X7sbkmiTh18qovKS/Owph669F0J4HqCsfqr9jkM0/SQ0=
+R1
+R11
+R26
+V:HiM`>a2h<5R=lok?Tb7;3
+r1
+!s85 0
+!i10b 0
+!s100 G9DBgK1<FDMPYBNF7l0a;0
+I:HiM`>a2h<5R=lok?Tb7;3
+!i103 1
+!i119 1
+!i8a 1323104496
+S1
+R0
+R19
+R28
+R29
+!i122 185
+R20
+R6
+31
+R30
+R31
+R32
+!i113 0
+R8
+R9
+nccb0e84
+vpRci2JB7ALZ1SHf2gegRcg==
+R1
+R11
+DXx4 work 19 niosv_c_csr_sv_unit 0 22 z9f:<PIcjchZ885NM`b=L0
+Z33 !s110 1782981170
+R5
+r1
+!s85 0
+!i10b 0
+!s100 g=1R=QoZO<IDLY?8oM>;^3
+I8j_z:C@WgEU2_6W^5WZ9>2
+!i119 1
+!i8a 587077456
+!s105 niosv_c_csr_sv_unit
+S1
+R0
+Z34 w1782981170
+Z35 8./../submodules/mentor/niosv_c_csr.sv
+Z36 F./../submodules/mentor/niosv_c_csr.sv
+!i122 186
+R4
+R6
+31
+R30
+Z37 !s107 ./../submodules/mentor/niosv_c_csr.sv|
+Z38 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_csr.sv|-work|hart|
+!i113 0
+R8
+R9
+nc2e5c02
+XtyYRZ3ap1FleH1Na5PM0Hab7NJkJmhmSMKEH8jucL50=
+R1
+R11
+R33
+Vz9f:<PIcjchZ885NM`b=L0
+r1
+!s85 0
+!i10b 0
+!s100 <L@eJXDN50nKF`[PSH>4[3
+Iz9f:<PIcjchZ885NM`b=L0
+!i103 1
+!i119 1
+!i8a 1128914736
+S1
+R0
+R19
+R35
+R36
+!i122 186
+R20
+R6
+31
+R30
+R37
+R38
+!i113 0
+R8
+R9
+n4fac944
+vPycnrqU2PHcVb3H0Lj2DEQ==
+R1
+R11
+DXx4 work 23 niosv_c_D_stage_sv_unit 0 22 3e`;@kWi>:DKYk3UWBfN01
+R33
+R5
+r1
+!s85 0
+!i10b 0
+!s100 9f52ozikHaeo:;gd]Aknn2
+I7zmRHG]UDOaZT9C;i]EG53
+!i119 1
+!i8a 1265231824
+!s105 niosv_c_D_stage_sv_unit
+S1
+R0
+R34
+Z39 8./../submodules/mentor/niosv_c_D_stage.sv
+Z40 F./../submodules/mentor/niosv_c_D_stage.sv
+!i122 187
+R4
+R6
+31
+Z41 !s108 1782981170.000000
+Z42 !s107 ./../submodules/mentor/niosv_c_D_stage.sv|
+Z43 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_D_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nc68995
+XhNKNSiBXkjyJWMkq2ge2OItHkBBdWNY2XUseqSoGyzU=
+R1
+R11
+R33
+V3e`;@kWi>:DKYk3UWBfN01
+r1
+!s85 0
+!i10b 0
+!s100 F5n990>3>Z2LFW@DJ4cDB1
+I3e`;@kWi>:DKYk3UWBfN01
+!i103 1
+!i119 1
+!i8a 1584888976
+S1
+R0
+R19
+R39
+R40
+!i122 187
+R20
+R6
+31
+R41
+R42
+R43
+!i113 0
+R8
+R9
+nc4f40a4
+vY6wqwsmumSt4+gJgJ+Jd7A==
+R1
+R11
+DXx4 work 23 niosv_c_decoder_sv_unit 0 22 gMa6bMiiUjW[HRjWoZUFQ0
+R26
+R5
+r1
+!s85 0
+!i10b 0
+!s100 X6LVMbV^zHY4Y5^_kg]1b3
+IU6W62o07b`8Q=Q<A1N7YT3
+!i119 1
+!i8a 1846027600
+!s105 niosv_c_decoder_sv_unit
+S1
+R0
+R27
+Z44 8./../submodules/mentor/niosv_c_decoder.sv
+Z45 F./../submodules/mentor/niosv_c_decoder.sv
+!i122 184
+R4
+R6
+31
+R30
+Z46 !s107 ./../submodules/mentor/niosv_c_decoder.sv|
+Z47 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_decoder.sv|-work|hart|
+!i113 0
+R8
+R9
+nc167492
+XlfPRQJl96wpcUDbMHGy5Xqk35kRDQfmmbaMqOWjv+oA=
+R1
+R11
+R26
+VgMa6bMiiUjW[HRjWoZUFQ0
+r1
+!s85 0
+!i10b 0
+!s100 Uja;RPSV5nze_2V0kELA13
+IgMa6bMiiUjW[HRjWoZUFQ0
+!i103 1
+!i119 1
+!i8a 1419082096
+S1
+R0
+R19
+R44
+R45
+!i122 184
+R20
+R6
+31
+R30
+R46
+R47
+!i113 0
+R8
+R9
+ncd23974
+vPLI+66zb1zKzed+qSgncjw==
+R1
+R11
+DXx4 work 23 niosv_c_E_stage_sv_unit 0 22 bPIU]0dgA1`9IM7><13cC2
+R33
+R5
+r1
+!s85 0
+!i10b 0
+!s100 :cI9ICh87`6k5;UZo;5D92
+I>FdoOh5G9TOSFXD4dO4161
+!i119 1
+!i8a 709662928
+!s105 niosv_c_E_stage_sv_unit
+S1
+R0
+R34
+Z48 8./../submodules/mentor/niosv_c_E_stage.sv
+Z49 F./../submodules/mentor/niosv_c_E_stage.sv
+!i122 188
+R4
+R6
+31
+R41
+Z50 !s107 ./../submodules/mentor/niosv_c_E_stage.sv|
+Z51 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_E_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+ndc689e5
+Xg8tU1Jp0z3Hl+en0EthVRH5DGLIxybKKDrza9G7zPsg=
+R1
+R11
+R33
+VbPIU]0dgA1`9IM7><13cC2
+r1
+!s85 0
+!i10b 0
+!s100 [EfDbXlWCnmF2lXj>m6EW3
+IbPIU]0dgA1`9IM7><13cC2
+!i103 1
+!i119 1
+!i8a 181545120
+S1
+R0
+R19
+R48
+R49
+!i122 188
+R20
+R6
+31
+R41
+R50
+R51
+!i113 0
+R8
+R9
+nc4f6da4
+vPni0xw3u2TB4O9U9PuYYCHvfvnGdLB+l47CoQ8b4V3s=
+R1
+R11
+DXx4 work 24 niosv_c_M0_stage_sv_unit 0 22 [J2<FQU8lV1W]g;jLgn]E0
+R33
+R5
+r1
+!s85 0
+!i10b 0
+!s100 jUYOQ11<lMJe_Fz8R]aUj2
+IiWY:6bHFFL>KNd;48]Jco3
+!i119 1
+!i8a 1177823568
+!s105 niosv_c_M0_stage_sv_unit
+S1
+R0
+R34
+Z52 8./../submodules/mentor/niosv_c_M0_stage.sv
+Z53 F./../submodules/mentor/niosv_c_M0_stage.sv
+!i122 189
+R4
+R6
+31
+R41
+Z54 !s107 ./../submodules/mentor/niosv_c_M0_stage.sv|
+Z55 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_c_M0_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+na843a5
+XspOKHaHmzKjFZ8WmP24YNM5WG/1OUDxrvxES+khkaBM=
+R1
+R11
+R33
+V[J2<FQU8lV1W]g;jLgn]E0
+r1
+!s85 0
+!i10b 0
+!s100 64onH6f@[`UR9KAL<5:O53
+I[J2<FQU8lV1W]g;jLgn]E0
+!i103 1
+!i119 1
+!i8a 1202890512
+S1
+R0
+R19
+R52
+R53
+!i122 189
+R20
+R6
+31
+R41
+R54
+R55
+!i113 0
+R8
+R9
+n30530c4
+XZfXw6sZZJZNJQc4QkNqyhA==
+R1
+R11
+Z56 !s110 1782981164
+!i10b 0
+!s100 IHQ9zP=0lJKA4?m:>hYz]0
+IhDoLBC=zR?<ejGNf:`g:a3
+!i119 1
+!i8a 1439827664
+S1
+R0
+Z57 w1782981164
+8./../submodules/mentor/niosv_clic_pkg.sv
+F./../submodules/mentor/niosv_clic_pkg.sv
+!i122 167
+R20
+VhDoLBC=zR?<ejGNf:`g:a3
+R6
+r1
+!s85 0
+31
+R10
+!s107 ./../submodules/mentor/niosv_clic_pkg.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_clic_pkg.sv|-work|hart|
+!i113 0
+R8
+R9
+n293a5c7
+vcA22wagJjlMfkY2T9vnDAg==
+R1
+R11
+DXx4 work 14 niosv_clic_pkg 0 22 hDoLBC=zR?<ejGNf:`g:a3
+Z58 !s110 1782981166
+!i10b 0
+!s100 S7dN]T1:;MfT<ZM8YdZJg0
+ICojj^b6`EFQ2EY^BMDniX2
+!i119 1
+!i8a 2031178112
+S1
+R0
+Z59 w1782981166
+8./../submodules/mentor/niosv_csr.sv
+F./../submodules/mentor/niosv_csr.sv
+!i122 175
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z60 !s108 1782981166.000000
+!s107 ./../submodules/mentor/niosv_csr.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_csr.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac2fa2
+v+Zz6SlvyFOdH67E++ToQ0Q3sqJTVYQRpwmXyqAE61xA=
+R1
+R11
+Z61 !s110 1782981167
+!i10b 0
+!s100 n833IjQ>DUF>LMJiUdWb03
+If_fNV?D_JlLFiUW1K6o;U0
+!i119 1
+!i8a 1639455424
+S1
+R0
+Z62 w1782981167
+8./../submodules/mentor/niosv_csrind_host.sv
+F./../submodules/mentor/niosv_csrind_host.sv
+!i122 177
+R4
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 ./../submodules/mentor/niosv_csrind_host.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_csrind_host.sv|-work|hart|
+!i113 0
+R8
+R9
+n8ca58c4
+Y5w3Uze1wjfasnGUKmw6plg==
+R1
+R58
+!i10b 0
+!s100 P=Eb3S5AkUNX6j<^<EiEQ1
+IYJFU^Zh8FM7850<@eaLEA1
+!i119 1
+!i8a 1580787984
+S1
+R0
+R59
+8./../submodules/mentor/niosv_csrind_if.sv
+F./../submodules/mentor/niosv_csrind_if.sv
+!i122 176
+R20
+R5
+R6
+r1
+!s85 0
+31
+R60
+!s107 ./../submodules/mentor/niosv_csrind_if.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_csrind_if.sv|-work|hart|
+!i113 0
+R8
+R9
+ne68ca56
+vCFc2Hk3aOjBDFjsoN1Fpi89V5v239pM4udK+wjk1/AA=
+R1
+R61
+!i10b 0
+!s100 8>HLb=AeMYmT76z`5Sdh63
+IZk@59JgXP`IUB6GH8J<P>1
+!i119 1
+!i8a 1173304016
+S1
+R0
+R62
+8./../submodules/mentor/niosv_instr_buffer.sv
+F./../submodules/mentor/niosv_instr_buffer.sv
+!i122 179
+R4
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 ./../submodules/mentor/niosv_instr_buffer.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_instr_buffer.sv|-work|hart|
+!i113 0
+R8
+R9
+n72e0d02
+vniosv_intel_niosv_m_0_hart
+2./../submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+R1
+Z63 !s110 1782981172
+!i10b 1
+!s100 E_B7jELo5<Jmj9zf>l?R72
+IGZ_6KcSDllMV@R1g4<@l42
+S1
+R0
+R19
+8./../submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+F./../submodules/mentor/niosv_intel_niosv_m_0_hart.sv
+!i122 197
+L0 25 373
+R5
+R6
+r1
+!s85 0
+31
+Z64 !s108 1782981172.000000
+!s107 ./../submodules/mentor/niosv_intel_niosv_m_0_hart.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_intel_niosv_m_0_hart.sv|-work|hart|
+!i113 0
+R8
+R9
+vj3QVIzGZXs166sr9bl4emYbjrDC57bCwwrFAubzCPEA=
+R1
+R11
+DXx4 work 31 niosv_interrupt_handler_sv_unit 0 22 EiF3FT9XIf`zN5bKS;`fm1
+R61
+R5
+r1
+!s85 0
+!i10b 0
+!s100 >4f[MEkOC^fR@@^jX?nK?0
+I@eAMDQ0INo:^bKXOHaQWT1
+!i119 1
+!i8a 1840618304
+!s105 niosv_interrupt_handler_sv_unit
+S1
+R0
+R62
+Z65 8./../submodules/mentor/niosv_interrupt_handler.sv
+Z66 F./../submodules/mentor/niosv_interrupt_handler.sv
+!i122 178
+R4
+R6
+31
+R23
+Z67 !s107 ./../submodules/mentor/niosv_interrupt_handler.sv|
+Z68 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_interrupt_handler.sv|-work|hart|
+!i113 0
+R8
+R9
+nbd394f2
+XYX/ad9stshFm+xmMHY7Cewivkz/8DEnV1CWnzAez5f0=
+R1
+R11
+R61
+VEiF3FT9XIf`zN5bKS;`fm1
+r1
+!s85 0
+!i10b 0
+!s100 Eeln>IG2;j4k8R<I4g?O`0
+IEiF3FT9XIf`zN5bKS;`fm1
+!i103 1
+!i119 1
+!i8a 71625776
+S1
+R0
+R19
+R65
+R66
+!i122 178
+R20
+R6
+31
+R23
+R67
+R68
+!i113 0
+R8
+R9
+n9325ab4
+vOu8fqHlOeisYzxBVh1gXzw==
+R1
+R11
+DXx4 work 17 niosv_lsu_sv_unit 0 22 _c34VzZ;PAF?5E2MFB:XO3
+R26
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ABFQE9em2jOo``BIS^F=C2
+IVB=]gQUmhmA4gB3XgE3712
+!i119 1
+!i8a 939698256
+!s105 niosv_lsu_sv_unit
+S1
+R0
+R27
+Z69 8./../submodules/mentor/niosv_lsu.sv
+Z70 F./../submodules/mentor/niosv_lsu.sv
+!i122 183
+R4
+R6
+31
+R16
+Z71 !s107 ./../submodules/mentor/niosv_lsu.sv|
+Z72 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_lsu.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac36a5
+Xin3LEsIlSreZr0eqWVfR/HHJWX9X9pSX6nEG4hNw9o4=
+R1
+R11
+R26
+V_c34VzZ;PAF?5E2MFB:XO3
+r1
+!s85 0
+!i10b 0
+!s100 KGW@kY2B><^J90`?7hmPA3
+I_c34VzZ;PAF?5E2MFB:XO3
+!i103 1
+!i119 1
+!i8a 1887121344
+S1
+R0
+R19
+R69
+R70
+!i122 183
+R20
+R6
+31
+R16
+R71
+R72
+!i113 0
+R8
+R9
+n6902ac4
+vl18KmJYCFyCCznay8KrDww==
+R1
+R11
+DXx4 work 9 riscv_pkg 0 22 2[a6BjNLMPchaoSmV`>GN2
+Z73 !s110 1782981171
+!i10b 0
+!s100 R3iBVU;bBhTZE=GkPdGR=0
+I[G2Lb>on4eJfKJPbD]j5F1
+!i119 1
+!i8a 1190620304
+S1
+R0
+Z74 w1782981171
+8./../submodules/mentor/niosv_m_core.sv
+F./../submodules/mentor/niosv_m_core.sv
+!i122 191
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z75 !s108 1782981171.000000
+!s107 ./../submodules/mentor/niosv_m_core.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_core.sv|-work|hart|
+!i113 0
+R8
+R9
+n3860c45
+vW+4KBqsZV+vn9/jrMPvrzA==
+R1
+R11
+DXx4 work 23 niosv_m_D_stage_sv_unit 0 22 S@i;aLzLGVcDNI5BJ[_M40
+R73
+R5
+r1
+!s85 0
+!i10b 0
+!s100 [QW]b0Se>f0G`b6ED1<:h3
+IIQB=cnLJR]1?jRa>8Z95V2
+!i119 1
+!i8a 1580483184
+!s105 niosv_m_D_stage_sv_unit
+S1
+R0
+R74
+Z76 8./../submodules/mentor/niosv_m_D_stage.sv
+Z77 F./../submodules/mentor/niosv_m_D_stage.sv
+!i122 193
+R4
+R6
+31
+R75
+Z78 !s107 ./../submodules/mentor/niosv_m_D_stage.sv|
+Z79 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_D_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nc69f95
+Xi1o7egi8cCbDSQsxfaAVy4HUxiE+x6jTn49eDy7L/yU=
+R1
+R11
+R73
+VS@i;aLzLGVcDNI5BJ[_M40
+r1
+!s85 0
+!i10b 0
+!s100 V2Q;Yiama;z]_A=[fdahK1
+IS@i;aLzLGVcDNI5BJ[_M40
+!i103 1
+!i119 1
+!i8a 531271264
+S1
+R0
+R19
+R76
+R77
+!i122 193
+R20
+R6
+31
+R75
+R78
+R79
+!i113 0
+R8
+R9
+nc3940a4
+vt7Jx3L5Ymgs/pw4Syh2T4g==
+R1
+R11
+DXx4 work 23 niosv_m_decoder_sv_unit 0 22 a2f2O]T6d82mY^:Y64CCW3
+R73
+R5
+r1
+!s85 0
+!i10b 0
+!s100 zOlMQzZfO`Zil8zMN?clA1
+IiT<oNfDIEnJ5UAaRI0>z43
+!i119 1
+!i8a 1596389504
+!s105 niosv_m_decoder_sv_unit
+S1
+R0
+R74
+Z80 8./../submodules/mentor/niosv_m_decoder.sv
+Z81 F./../submodules/mentor/niosv_m_decoder.sv
+!i122 190
+R4
+R6
+31
+R75
+Z82 !s107 ./../submodules/mentor/niosv_m_decoder.sv|
+Z83 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_decoder.sv|-work|hart|
+!i113 0
+R8
+R9
+nc166292
+XmrR9/Jm8SQGZefDcpyqg8YTx9G7A4FVvyhmz6IjFD+I=
+R1
+R11
+R73
+Va2f2O]T6d82mY^:Y64CCW3
+r1
+!s85 0
+!i10b 0
+!s100 bVSFmOEDk]^fF1LKC8>3E0
+Ia2f2O]T6d82mY^:Y64CCW3
+!i103 1
+!i119 1
+!i8a 153776240
+S1
+R0
+R19
+R80
+R81
+!i122 190
+R20
+R6
+31
+R75
+R82
+R83
+!i113 0
+R8
+R9
+nce43974
+v/51OeyXEozA82iJeJMUEKw==
+R1
+R11
+DXx4 work 23 niosv_m_E_stage_sv_unit 0 22 hf898S0i>RCo6dM`N;gSI0
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ]=z3O`NF@W<<aPa]4R=Pn1
+IU:IYe>f9kV@zClk;Z876D3
+!i119 1
+!i8a 2131570768
+!s105 niosv_m_E_stage_sv_unit
+S1
+R0
+Z84 w1782981172
+Z85 8./../submodules/mentor/niosv_m_E_stage.sv
+Z86 F./../submodules/mentor/niosv_m_E_stage.sv
+!i122 194
+R4
+R6
+31
+R64
+Z87 !s107 ./../submodules/mentor/niosv_m_E_stage.sv|
+Z88 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_E_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+ndc69fe5
+XUR5HUppNG8q4M6gscCwr/iQGD9BcnFcPCwf2Hq1I1mI=
+R1
+R11
+R63
+Vhf898S0i>RCo6dM`N;gSI0
+r1
+!s85 0
+!i10b 0
+!s100 _J[<Y1TzG42_h;iAd:=ho2
+Ihf898S0i>RCo6dM`N;gSI0
+!i103 1
+!i119 1
+!i8a 352504112
+S1
+R0
+R19
+R85
+R86
+!i122 194
+R20
+R6
+31
+R64
+R87
+R88
+!i113 0
+R8
+R9
+nc396da4
+vvc+wX/BanPD+SFmGdeRUeEA+4swF4hYG9rXA0c8pjI0=
+R1
+R73
+!i10b 0
+!s100 4Ol`i:R6=jOCX1O:28LaL1
+I2UQh7nZ>BmG0BA]1kLYe73
+!i119 1
+!i8a 1800716912
+S1
+R0
+R74
+8./../submodules/mentor/niosv_m_instr_prefetch.sv
+F./../submodules/mentor/niosv_m_instr_prefetch.sv
+!i122 192
+R4
+R5
+R6
+r1
+!s85 0
+31
+R75
+!s107 ./../submodules/mentor/niosv_m_instr_prefetch.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_instr_prefetch.sv|-work|hart|
+!i113 0
+R8
+R9
+n7d5c948
+vaRovkD34G5Ug6nctO4X08k141BleJuMXVUfSJW+qowI=
+R1
+R11
+DXx4 work 24 niosv_m_M0_stage_sv_unit 0 22 Co?YN0[M?jFM>j_i?z@8l3
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 SZnD<K[TI;NKbD<_GTI9Q1
+I2LU4[g[C>WB5Tec8n<ViT1
+!i119 1
+!i8a 2097062992
+!s105 niosv_m_M0_stage_sv_unit
+S1
+R0
+R84
+Z89 8./../submodules/mentor/niosv_m_M0_stage.sv
+Z90 F./../submodules/mentor/niosv_m_M0_stage.sv
+!i122 195
+R4
+R6
+31
+R64
+Z91 !s107 ./../submodules/mentor/niosv_m_M0_stage.sv|
+Z92 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_M0_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+na923a5
+X3gbDHY/3fGowXXdFazUh1RCdD1QsHI5g8bOOI28AOWg=
+R1
+R11
+R63
+VCo?YN0[M?jFM>j_i?z@8l3
+r1
+!s85 0
+!i10b 0
+!s100 V]P`RnRBP1Bo5<M[L[G^E2
+ICo?YN0[M?jFM>j_i?z@8l3
+!i103 1
+!i119 1
+!i8a 1860208128
+S1
+R0
+R19
+R89
+R90
+!i122 195
+R20
+R6
+31
+R64
+R91
+R92
+!i113 0
+R8
+R9
+n3a530c4
+v0hC3TMBVRMUM2qkPLDxn8g==
+R1
+R11
+DXx4 work 23 niosv_m_W_stage_sv_unit 0 22 ]khN>YoM4VOlk>bTcHQ^^2
+R63
+R5
+r1
+!s85 0
+!i10b 0
+!s100 [fWQc9]`<b9FNVeUEbQB02
+ISTE0Ti:Gc7FFE>YOUlI6f1
+!i119 1
+!i8a 1419660544
+!s105 niosv_m_W_stage_sv_unit
+S1
+R0
+R84
+Z93 8./../submodules/mentor/niosv_m_W_stage.sv
+Z94 F./../submodules/mentor/niosv_m_W_stage.sv
+!i122 196
+R4
+R6
+31
+R64
+Z95 !s107 ./../submodules/mentor/niosv_m_W_stage.sv|
+Z96 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_m_W_stage.sv|-work|hart|
+!i113 0
+R8
+R9
+nbc69f95
+Xh8soLhoxpCE8yhQkwVFsp+IDj0j4C0Nw1expbgRdZCA=
+R1
+R11
+R63
+V]khN>YoM4VOlk>bTcHQ^^2
+r1
+!s85 0
+!i10b 0
+!s100 U@Nj6V30cEAR`Ci5OQJQ[3
+I]khN>YoM4VOlk>bTcHQ^^2
+!i103 1
+!i119 1
+!i8a 1190397328
+S1
+R0
+R19
+R93
+R94
+!i122 196
+R20
+R6
+31
+R64
+R95
+R96
+!i113 0
+R8
+R9
+nc3937a4
+v2nE9AVsv1G71K9rboEjK5/rw7WCVJ5+Wqh658zv1Hbg=
+R1
+R11
+DXx4 work 26 niosv_mem_op_state_sv_unit 0 22 @bG05YFXNH?lYGkD7X^?;2
+R56
+R5
+r1
+!s85 0
+!i10b 0
+!s100 `dj5l_:JRQAO7a2>4[AdA3
+I1V_=Yid::ZlR_fhbdl;dD1
+!i119 1
+!i8a 272220576
+!s105 niosv_mem_op_state_sv_unit
+S1
+R0
+R57
+Z97 8./../submodules/mentor/niosv_mem_op_state.sv
+Z98 F./../submodules/mentor/niosv_mem_op_state.sv
+!i122 168
+R4
+R6
+31
+R10
+Z99 !s107 ./../submodules/mentor/niosv_mem_op_state.sv|
+Z100 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_mem_op_state.sv|-work|hart|
+!i113 0
+R8
+R9
+n706c805
+XN8znoeXJQnp9qGiHqxNrYtr4iogwA5ypTGD/PcxpyVg=
+R1
+R11
+R56
+V@bG05YFXNH?lYGkD7X^?;2
+r1
+!s85 0
+!i10b 0
+!s100 0ePD]Q;>ngenjWV6YG>cM1
+I@bG05YFXNH?lYGkD7X^?;2
+!i103 1
+!i119 1
+!i8a 1751501728
+S1
+R0
+R19
+R97
+R98
+!i122 168
+R20
+R6
+31
+R10
+R99
+R100
+!i113 0
+R8
+R9
+nc8ecb64
+XzoRW1FXc33QG3iQFyZe/8b3y/+hKQX193VDI5t4F5ek=
+R1
+Z101 !s110 1782981163
+!i10b 0
+!s100 2amDl3V><3Ka8bbRP6;c61
+ImUCkckRg<V_bmF0LoF`=i2
+!i119 1
+!i8a 1573907536
+S1
+R0
+Z102 w1782981163
+8./../submodules/mentor/niosv_opcode_def.sv
+F./../submodules/mentor/niosv_opcode_def.sv
+!i122 166
+R20
+VmUCkckRg<V_bmF0LoF`=i2
+R6
+r1
+!s85 0
+31
+Z103 !s108 1782981163.000000
+!s107 ./../submodules/mentor/niosv_opcode_def.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_opcode_def.sv|-work|hart|
+!i113 0
+R8
+R9
+nf6a6db6
+vs+M08vYRtz9+xfhX7UIUJA==
+R1
+R56
+!i10b 0
+!s100 iA93TB:6P6RYc6QRG:K]h1
+IlhC9bgZ?OL5TnG90TNa<63
+!i119 1
+!i8a 1105662608
+S1
+R0
+R57
+8./../submodules/mentor/niosv_ram.sv
+F./../submodules/mentor/niosv_ram.sv
+!i122 169
+R4
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ./../submodules/mentor/niosv_ram.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_ram.sv|-work|hart|
+!i113 0
+R8
+R9
+n6ac1d7d
+vlyAlEdGQmVh0shLKUOi0EQ==
+R1
+R58
+!i10b 0
+!s100 5`g;HZHW^GX?BJ:4l[N9z2
+IineBM;m?B;Gb<YmUnK=J63
+!i119 1
+!i8a 1782402992
+S1
+R0
+R59
+8./../submodules/mentor/niosv_reg_file.sv
+F./../submodules/mentor/niosv_reg_file.sv
+!i122 174
+R4
+R5
+R6
+r1
+!s85 0
+31
+R60
+!s107 ./../submodules/mentor/niosv_reg_file.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_reg_file.sv|-work|hart|
+!i113 0
+R8
+R9
+nbbf0ff5
+vZa6cKtYMYSxvv4EYdk75EQ==
+R1
+R11
+DXx4 work 19 niosv_shift_sv_unit 0 22 5nIL`Hc:k=YO<g@ZOJZ?43
+R12
+R5
+r1
+!s85 0
+!i10b 0
+!s100 ;Bo_XECi7VK_>]1R[E]Y[3
+Ill2zB=K2f;@^_hd<YMk:U2
+!i119 1
+!i8a 123279440
+!s105 niosv_shift_sv_unit
+S1
+R0
+R13
+Z104 8./../submodules/mentor/niosv_shift.sv
+Z105 F./../submodules/mentor/niosv_shift.sv
+!i122 181
+R4
+R6
+31
+R16
+Z106 !s107 ./../submodules/mentor/niosv_shift.sv|
+Z107 !s90 -reportprogress|300|-sv|./../submodules/mentor/niosv_shift.sv|-work|hart|
+!i113 0
+R8
+R9
+nc1ce974
+XRcq5uchzTKVQGnoYlTo00rEp7W75fRxClXp5pkNdl8E=
+R1
+R11
+R12
+V5nIL`Hc:k=YO<g@ZOJZ?43
+r1
+!s85 0
+!i10b 0
+!s100 B_AXN@8[RUBX<]_?[Z>k^3
+I5nIL`Hc:k=YO<g@ZOJZ?43
+!i103 1
+!i119 1
+!i8a 1199101856
+S1
+R0
+R19
+R104
+R105
+!i122 181
+R20
+R6
+31
+R16
+R106
+R107
+!i113 0
+R8
+R9
+n66fd374
+X0fu7C92xWnGVQ3/f5HPOoQ==
+R1
+R101
+!i10b 0
+!s100 6;j:gZBXB3UkbLlD@RZ>@1
+I2[a6BjNLMPchaoSmV`>GN2
+!i119 1
+!i8a 1196496784
+S1
+R0
+R102
+8./../submodules/mentor/riscv.pkg.sv
+F./../submodules/mentor/riscv.pkg.sv
+!i122 165
+R20
+V2[a6BjNLMPchaoSmV`>GN2
+R6
+r1
+!s85 0
+31
+R103
+!s107 ./../submodules/mentor/riscv.pkg.sv|
+!s90 -reportprogress|300|-sv|./../submodules/mentor/riscv.pkg.sv|-work|hart|
+!i113 0
+R8
+R9
+n9ac2017

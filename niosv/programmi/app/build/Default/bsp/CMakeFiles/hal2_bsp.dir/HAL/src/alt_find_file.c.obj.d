@@ -1,0 +1,32 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj: \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/src/alt_find_file.c \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/string.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_locale.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/strings.h \
+ C:/altera_lite/25.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/string.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/sys/alt_dev.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/system.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/linker.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/sys/alt_llist.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/alt_types.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/priv/alt_dev_llist.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/priv/alt_file.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/os/alt_sem.h \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/inc/priv/alt_no_error.h

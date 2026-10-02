@@ -1,0 +1,38 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/simulation/questa
+vH43f3NuQVaXM+A97h1zNrTSAjKQvGlW8jnZLDXHT254=
+DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1782934003
+!i10b 0
+!s100 7W^P^dk<XQC96Fi]hJZ>K2
+IacizIkST=06S`46b:jiPd0
+!i119 1
+!i8a 1274198816
+S1
+R0
+w1782934003
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_timer_msip.sv
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_timer_msip.sv
+!i122 0
+L0 12 1
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1782934003.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_timer_msip.sv|
+!s90 -reportprogress|300|-sv|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/mentor/niosv_timer_msip.sv|-work|timer_module|
+!i113 0
+o-sv -work timer_module -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0 defaultOptions 1085333592
+n6c84a50

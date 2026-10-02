@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1776684778
+VX?V@d5Qd9bKM>6G:GRN4]1
+04 14 3 work testbench_coha sim 1
+=1-1068386eecfb-69e60eea-158-3a04
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U2 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+Ecodificatorehamming
+Z2 w1774707206
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z5 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/codificatorehamming.vhd
+Z6 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/codificatorehamming.vhd
+l0
+L3 1
+VFD1YToBemokeHJcJ8lF]]1
+!s100 P63D`QLZ`U2d3_[<`_BM63
+Z7 OL;C;2025.2;82
+31
+Z8 !s110 1776684777
+!i10b 1
+Z9 !s108 1776684777.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/codificatorehamming.vhd|
+Z11 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/codificatorehamming.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Afunc
+R3
+R4
+DEx4 work 19 codificatorehamming 0 22 FD1YToBemokeHJcJ8lF]]1
+!i122 0
+l10
+L8 15
+VU6dN1o>`V=D3dHU[:95CT3
+!s100 dEUE_RHWZ4Y:XjHRghcca0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etestbench_coha
+Z14 w1774708835
+R3
+R4
+!i122 1
+R1
+Z15 8C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/testbench_coha.vhd
+Z16 FC:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/testbench_coha.vhd
+l0
+L3 1
+VhB>eh>IN1fb<JUbNOkS021
+!s100 3hjlJ^fKFKT1GL?G:zE_X0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/testbench_coha.vhd|
+Z18 !s107 C:/Users/adria/OneDrive/Desktop/progetti Quartus/codificatorehamming/testbench_coha.vhd|
+!i113 0
+R12
+R13
+Asim
+R3
+R4
+DEx4 work 14 testbench_coha 0 22 hB>eh>IN1fb<JUbNOkS021
+!i122 1
+l14
+L6 26
+Ve35`EGe>C24BZ0;YRjk>c0
+!s100 U^QJQXZJ^_H[a:IDGcP_J1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

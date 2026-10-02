@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity top is
+port (
+    CLOCK_50 : in  std_logic;
+    RESET_N  : in  std_logic;
+    PIO_OUT  : out std_logic_vector(31 downto 0)
+);
+end entity;
+
+architecture rtl of top is
+
+    component niosv
+        port (
+            clk_clk                          : in  std_logic;
+            pio_0_external_connection_export : out std_logic_vector(31 downto 0);
+            reset_reset_n                    : in  std_logic
+        );
+    end component;
+
+begin
+
+    u0 : niosv
+    port map (
+        clk_clk => CLOCK_50,
+        reset_reset_n => RESET_N,
+        pio_0_external_connection_export => PIO_OUT
+    );
+
+end architecture;

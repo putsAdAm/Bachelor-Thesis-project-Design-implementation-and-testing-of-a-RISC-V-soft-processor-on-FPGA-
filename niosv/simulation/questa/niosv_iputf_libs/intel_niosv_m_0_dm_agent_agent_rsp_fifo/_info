@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/simulation/questa
+valtera_avalon_sc_fifo
+2C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v
+!s110 1782933998
+!i10b 1
+!s100 5BK1b[bhL0>Ei=h=H:bmS0
+Iki[Pcfa85oVo0E6U@?c[=0
+R0
+w1782919077
+8C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v
+FC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v
+!i122 0
+L0 21 895
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1782933998.000000
+!s107 C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/submodules/altera_avalon_sc_fifo.v|-work|intel_niosv_m_0_dm_agent_agent_rsp_fifo|
+!i113 0
+o-work intel_niosv_m_0_dm_agent_agent_rsp_fifo -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0 defaultOptions 1085333592

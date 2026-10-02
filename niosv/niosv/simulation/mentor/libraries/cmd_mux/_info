@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/niosv/simulation/mentor
+valtera_merlin_arb_adder
+Z1 2./../submodules/altera_merlin_arbitrator.sv
+Z2 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z3 !s110 1782981152
+!i10b 1
+!s100 Cl8VSH5Y96M;_8kb9eOi[0
+IEQBH_UI@ASfbnzIZO=S2P2
+S1
+R0
+Z4 w1782980260
+Z5 8./../submodules/altera_merlin_arbitrator.sv
+Z6 F./../submodules/altera_merlin_arbitrator.sv
+!i122 11
+L0 228 45
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z9 !s108 1782981152.000000
+!s107 ./../submodules/altera_merlin_arbitrator.sv|
+Z10 !s90 -reportprogress|300|-sv|./../submodules/altera_merlin_arbitrator.sv|-work|cmd_mux|
+!i113 0
+Z11 o-sv -work cmd_mux -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0 defaultOptions 1085333592
+valtera_merlin_arbitrator
+R1
+R2
+R3
+!i10b 1
+!s100 `YAD1b22kAEW8zWHi:;FN1
+IWffI[zgFmZ_><bY4DR]TM0
+S1
+R0
+R4
+R5
+R6
+!i122 11
+L0 103 121
+R7
+R8
+r1
+!s85 0
+31
+R9
+Z13 !s107 ./../submodules/altera_merlin_arbitrator.sv|
+R10
+!i113 0
+R11
+R12
+vniosv_mm_interconnect_0_cmd_mux
+2./../submodules/niosv_mm_interconnect_0_cmd_mux.sv
+R2
+R3
+!i10b 1
+!s100 <`LJ4cZAJ:NS:8S[MWcb>1
+I6mGIWA>L64^c3Ul4aQfY:2
+S1
+R0
+R4
+8./../submodules/niosv_mm_interconnect_0_cmd_mux.sv
+F./../submodules/niosv_mm_interconnect_0_cmd_mux.sv
+!i122 10
+L0 51 306
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./../submodules/niosv_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|./../submodules/niosv_mm_interconnect_0_cmd_mux.sv|-work|cmd_mux|
+!i113 0
+R11
+R12

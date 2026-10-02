@@ -1,0 +1,2 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj: \
+ C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/bsp/HAL/src/alt_log_printf.c

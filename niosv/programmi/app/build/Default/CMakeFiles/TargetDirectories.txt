@@ -1,0 +1,9 @@
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/onchip_mem.elf.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/create-objdump.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/niosv-stack-report.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/create-hex.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/edit_cache.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/CMakeFiles/rebuild_cache.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/bsp/CMakeFiles/hal2_bsp.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/bsp/CMakeFiles/edit_cache.dir
+C:/Users/adria/OneDrive/Desktop/progettiQuartus/niosv/programmi/app/build/Default/bsp/CMakeFiles/rebuild_cache.dir
